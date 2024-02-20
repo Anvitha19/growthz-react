@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/growthz-react/static/css/main.3345f3ac.css",
+    "main.js": "/growthz-react/static/js/main.303117e2.js",
+    "static/media/home-img-2.svg": "/growthz-react/static/media/home-img-2.14854554f86aea28e2d2f204d27e1bac.svg",
+    "static/media/home-img-3.svg": "/growthz-react/static/media/home-img-3.4e8311a601183dd43512007452d1b629.svg",
+    "static/media/home-img.svg": "/growthz-react/static/media/home-img.272e7f937f2606eaf019342f93c15802.svg",
+    "static/media/dashboard.svg": "/growthz-react/static/media/dashboard.6d0956122c0500a9218b9c17b649a9dc.svg",
+    "static/media/home-img-1.png": "/growthz-react/static/media/home-img-1.0f626db2b42734e09c51.png",
+    "static/media/logo-color.png": "/growthz-react/static/media/logo-color.b8b4ff0131eebc45db57.png",
+    "static/media/icon.png": "/growthz-react/static/media/icon.1fd600b0ab2725f027c2.png",
+    "static/media/slick.svg": "/growthz-react/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/growthz-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/growthz-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/growthz-react/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/growthz-react/index.html",
+    "main.3345f3ac.css.map": "/growthz-react/static/css/main.3345f3ac.css.map",
+    "main.303117e2.js.map": "/growthz-react/static/js/main.303117e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3345f3ac.css",
+    "static/js/main.303117e2.js"
+  ]
+}
