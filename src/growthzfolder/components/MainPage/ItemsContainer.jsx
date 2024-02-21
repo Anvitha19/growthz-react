@@ -1,7 +1,7 @@
 import React from 'react';
 import { Services, Company, GetInTouch } from "./Menu";
 import Item from './Item';
-import Icon from '../../assets/icon.png';
+import Icon from '../../../assets/icon.png';
 
 
 const ItemsContainer = () => {
