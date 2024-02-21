@@ -6,7 +6,6 @@ import Home1 from '../../assets/home-img-1.png';
 import Home2 from '../../assets/home-img-2.svg';
 import Home3 from '../../assets/home-img-3.svg';
 import Header from '../components/MainPage/Header'
-import Maximize from '../components/MainPage/Maximize'
 import Footer from '../components/MainPage/Footer'
 import Clients from '../components/MainPage/Clients'
 import Testinomial from '../components/MainPage/Testinomial'
@@ -156,7 +155,6 @@ const MainPage = () => {
       <Button>LET'S TALK</Button>
     </div>
     </section>
-    <Maximize />
     <Footer />
     </>
   )

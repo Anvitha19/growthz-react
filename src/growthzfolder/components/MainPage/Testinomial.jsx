@@ -2,6 +2,11 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Button from './Button';
+import Img1 from "../../../assets/testinomial-img-1.png";
+import Img2 from "../../../assets/testinomial-img-2.png";
+import Quote from "../../../assets/quote.svg"
+
 
 function Testinomial () {
     const settings = {
@@ -26,6 +31,7 @@ function Testinomial () {
             <Slider {...settings}>
                 {clients.map((client, index) => ( 
                     <div key={index} className='max-w-[1300px] mx-auto grid md:grid-cols-2 md:columns-2 py-16 sm:w-10/12 sm:pr-10 sm:py-0 md:border-r-2 md:border-solid md:border-black pl-6 sm:border-r-0'>
+                        <img src={Quote} alt="/" className=''/>
                         <img src={client.image} alt='/' className='w-[274px] h-[281px]'/>
                         <div>
                             <h1 className='text-2xl font-bold pb-4'>{client.title}</h1>
@@ -36,6 +42,9 @@ function Testinomial () {
                     </div>
                 ))}
             </Slider>
+            <div className='py-16 ml-8'>
+            <Button>KNOW MORE</Button>
+            </div>
         </div>
     )
 }
@@ -43,14 +52,14 @@ function Testinomial () {
 const clients = [
     {
         title:"Top 3 Rankings Achieved",
-        image:"https://www.syoft.com/growthz/assets/img/index-swiper-1.png",
+        image:Img1,
         review:"Growthz is an incredible partner for achieving top rankings on search and social platforms. Their expertise in SEO and social media has helped our brand secure verified visibility, with consistent top 3 rankings. Thank you, Growthz, for your exceptional skills",
         name:"Maya Patel ",
         profession:" Project Manager ",
     },
     {
         title:"Top 3 Rankings Achieved",
-        image:"https://www.syoft.com/growthz/assets/img/index-swiper-1.png",
+        image:Img2,
         review:"Growthz is an incredible partner for achieving top rankings on search and social platforms. Their expertise in SEO and social media has helped our brand secure verified visibility, with consistent top 3 rankings. Thank you, Growthz, for your exceptional skills",
         name:"Martha Brown",
         profession:" Project Manager ",

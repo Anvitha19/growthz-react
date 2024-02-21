@@ -2,6 +2,15 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Zepul from "../../../assets/zepul.png";
+import Mps from "../../../assets/mps.png";
+import WiseLearner from "../../../assets/wise-learner.png";
+import Lenspick from "../../../assets/lenspick.png";
+import Kalamandir from "../../../assets/kalamandir.png";
+import Hoa from "../../../assets/hoa.png";
+import Worke from "../../../assets/worke.png";
+import Eazyrooms from "../../../assets/eazyrooms.png"
+
 
 function Clients  () {
   const settings = {
@@ -43,28 +52,28 @@ function Clients  () {
 
 const data = [
   {
-    img: 'https://www.syoft.com/growthz/assets/img/integations/zepul.png',
+    img: Zepul
   },
   {
-    img: 'https://www.syoft.com/growthz/assets/img/integations/mps.png',
+    img: Mps
   },
   {
-    img: 'https://www.syoft.com/growthz/assets/img/integations/wise-learner.png',
+    img: WiseLearner
   },
   {
-    img: 'https://www.syoft.com/growthz/assets/img/integations/lenspick.png',
+    img: Lenspick
   },
   {
-    img: 'https://www.syoft.com/growthz/assets/img/integations/kalamandir.png',
+    img: Kalamandir
   },
   {
-    img: 'https://www.syoft.com/growthz/assets/img/integations/hoa.png',
+    img: Hoa
   },
   {
-    img: 'https://www.syoft.com/growthz/assets/img/integations/worke.png',
+    img: Worke
   },
   {
-    img: 'https://www.syoft.com/growthz/assets/img/integations/eazyrooms.png',
+    img: Eazyrooms
   },
 ];
 
