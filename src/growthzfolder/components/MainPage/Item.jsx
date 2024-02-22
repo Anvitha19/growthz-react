@@ -2,7 +2,8 @@ import React from "react";
 
 const Item = ({ Links, title }) => {
   return (
-    <ul>
+    <div className="mx-auto">
+      <ul>
       <h1 className="mb-5 text-[#1A1E21] text-3xl font-semibold">{title}</h1>
       {Links.map((link) => (
         <li key={link.name} className="mb-3">
@@ -16,6 +17,7 @@ const Item = ({ Links, title }) => {
         </li>
       ))}
     </ul>
+    </div>
   );
 };
 

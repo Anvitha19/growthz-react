@@ -6,6 +6,7 @@ import Home1 from '../../assets/home-img-1.png';
 import Home2 from '../../assets/home-img-2.svg';
 import Home3 from '../../assets/home-img-3.svg';
 import Header from '../components/MainPage/Header'
+import Maximize from '../components/MainPage/Maximize'
 import Footer from '../components/MainPage/Footer'
 import Clients from '../components/MainPage/Clients'
 import Testinomial from '../components/MainPage/Testinomial'
@@ -70,29 +71,29 @@ const MainPage = () => {
   return (
     <>
     <Header />
-    <section className='pt-32 pb-16 md:ml-24'>
-        <div className='w-full items-center justify-center'>
-        <div className='relative p-2.5 w-10/12 flex-auto'>
-            <h1 className='text-black md:text-[80px] leading-tight font-black sm:text-6xl'>We Help Impactful <br/>Brands Build
+    {/* Banner start */}
+    <div className='py-16 w-full'>
+        <div className='max-w-[1240px] relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
+            <h1 className='text-black md:text-[80px] leading-tight font-black max-[876px]:text-[32px]'>We Help Impactful <br/>Brands Build
                     <span className='text-[#F3BE18]'> Predictable </span>
                     {/* <span>Sustainable</span>
                     <span>Scalable</span>
                     <span>Measurable</span> */}
                 Compounding Growth
             </h1>
-            <p className='py-4 text-[#1A1E21] md:text-lg sm:text-sm font-medium'>We're not your typical marketing agency. Instead, we're a team of dedicated experts blending innovative thinking with proven methodologies. With a focus on processes that work and a talented squad that's second to none, we're here to transform your brand's vision into measurable success.</p>
-            <div className='pt-12'>
+            <p className='py-4 text-[#1A1E21] md:text-lg font-medium sm:text-sm'>We're not your typical marketing agency. Instead, we're a team of dedicated experts blending innovative thinking with proven methodologies. With a focus on processes that work and a talented squad that's second to none, we're here to transform your brand's vision into measurable success.</p>
+            <div className='md:pt-12 max-[876px]:pb-5'>
                 <Button>Let's talk</Button>
             </div>
         </div>
-        <div className='border-b-4 border-solid border-black w-11/12'>
-            <img src={Dashboard} alt="dashboardImage" className='w-full'/>
+        <div className='border-b-4 border-solid border-black w-[90%] mx-auto '>
+            <img src={Dashboard} alt="dashboardImage" className='w-[1296px]  md:-mt-[180px] max-[876px]:-mt-[100px]'/>
         </div>
-        </div>
-    </section>
-    <div className='w-full pt-16 mx-10 '>
+    </div>
+    {/* Banner end */}
+    <div className='w-full py-16'>
       {sectionsData.map((section, index) => (
-        <div key={index} className='max-w-[1200px] mx-auto grid md:grid-cols-2 py-16 sm:w-10/12 sm:pr-10 sm:py-0'>
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-16 w-[80%]'>
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
             <h4 className='md:text-3xl sm:text-xl text-base font-medium pb-2'>{section.subTitle}</h4>
@@ -102,8 +103,8 @@ const MainPage = () => {
         </div>
       ))}
       {sectionsData1.map((section, index) => (
-        <div key={index} className='max-w-[1200px] mx-auto grid md:grid-cols-2 py-16 sm:w-10/12 sm:pr-10 sm:pb-0'>
-          <img className='w-[500px] mx-auto my-4 sm:order-1 md:order-none' src={section.image} alt='/' />
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-16 w-[80%]'>
+          <img className='w-[500px] mx-auto my-4 max-[876px]:order-1 md:order-none' src={section.image} alt='/' />
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
             <h4 className='md:text-3xl sm:text-xl text-base font-medium pb-2'>{section.subTitle}</h4>
@@ -112,7 +113,7 @@ const MainPage = () => {
         </div>
       ))}
       {sectionsData2.map((section, index) => (
-        <div key={index} className='max-w-[1200px] mx-auto grid md:grid-cols-2 py-16 sm:w-10/12 sm:pr-10 sm:pb-0'>
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-16 w-[80%]'>
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
             <h4 className='md:text-3xl sm:text-xl text-base font-medium pb-2'>{section.subTitle}</h4>
@@ -122,8 +123,8 @@ const MainPage = () => {
         </div>
       ))}
       {sectionsData3.map((section, index) => (
-        <div key={index} className='max-w-[1200px] mx-auto grid md:grid-cols-2 py-16 sm:w-10/12 sm:pr-10 sm:pb-0'>
-          <img className='w-[500px] mx-auto my-4 sm:order-1 md:order-none' src={section.image} alt='/' />
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-16 w-[80%]'>
+          <img className='w-[500px] mx-auto my-4 max-[876px]:order-1 md:order-none' src={section.image} alt='/' />
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
             <h4 className='md:text-3xl sm:text-xl text-base font-medium pb-2'>{section.subTitle}</h4>
@@ -132,19 +133,21 @@ const MainPage = () => {
         </div>
       ))}
     </div>
-    <div className='items-center justify-center text-center py-14 md:pl-36 w-10/12'>
-      <h2 className='ml-40 md:text-[57px] md:leading-tight sm:text-3xl text-2xl text-black w-9/12 font-black pb-4'>LET'S SCALE YOUR GROWTHZ STORY TODAY</h2>
-      <div className='sm:pl-36'>
+    <div className='w-full py-16'>
+    <div className='max-w-[1240px] items-center justify-center text-center mx-auto w-[70%]'>
+      <h2 className='md:text-[57px] md:leading-tight  max-[867px]:text-2xl text-2xl text-black font-black pb-4'>LET'S SCALE YOUR GROWTHZ STORY TODAY</h2>
+      <div className=''>
       <Button>GET IN TOUCH</Button>
       </div>
     </div>
+    </div>
     <Clients />
     <Testinomial />
-    <section className='pb-20'>
-      <div className='w-full ml-28 pb-10'>
-      <h1 className='py-16 text-[#6E18F3] md:text-[57px] font-black leading-none sm:text-5xl'>DISCOVER OUR <br />PROCESS</h1>
+    <div className='w-full py-16'>
+      <div className='max-w-[1240px] mx-auto w-[90%]  max-[876px]:w-[80%]'>
+      <h1 className='py-16 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>DISCOVER OUR <br />PROCESS</h1>
       {process.map((section, index) => (
-        <div key={index} className=' w-10/12 mb-10'>
+        <div key={index} className='mx-auto mb-10'>
           <div className='flex flex-col justify-center border-b-4 border-solid border-[#f3be18]'>
             <h1 className='md:text-4xl  sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
             <h4 className='md:text-lg sm:text-sm text-base font-semibold pb-2'>{section.subTitle}</h4>
@@ -154,7 +157,8 @@ const MainPage = () => {
       ))}
       <Button>LET'S TALK</Button>
     </div>
-    </section>
+    </div>
+    <Maximize />
     <Footer />
     </>
   )

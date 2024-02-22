@@ -31,22 +31,22 @@ function Clients  () {
   ]
   };
   return (
-    <section className=''>
-        <div className='bg-[#F3BE18] py-10'>
-        <h1 className='text-[57px] font-black ml-24 py-5 uppercase'>
+    <div className='w-full py-16 '>
+        <div className=' bg-[#F3BE18] mx-auto'>
+        <h1 className='md:text-[57px] md:ml-16 font-black py-5 uppercase ml-8 max-[876px]:text-[24px]'>
             Our Clients
         </h1>
         <Slider {...settings}>
                 {data.map((data, index) => ( 
-                  <div className='ml-10'> 
-                    <div key={index} className='max-w-[800px] mx-auto py-16 sm:py-0'>
+                  <div className='mx-auto'> 
+                    <div key={index} className='max-w-[800px] mx-auto'>
                         <img className='md:w-[285px] md:h-[155px] sm:w-[150px]' src={data.img} alt='/'/>
                     </div>
                   </div>
                 ))}
-            </Slider>
+        </Slider>
       </div>
-    </section>
+    </div>
   )
 }
 

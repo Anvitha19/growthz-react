@@ -26,12 +26,13 @@ function Testinomial () {
     };
 
     return (
-        <div className='py-24 ml-16'>
-            <h1 className='py-16 text-[#6E18F3] md:text-[57px] font-black leading-none sm:text-5xl'>WHAT OUR <br/>CLIENT SAYS</h1>
+        <div className='w-full py-16'>
+            <div className='max-w-[1240px] mx-auto w-[90%]  max-[876px]:w-[80%]'>
+            <h1 className='py-16 text-[#6E18F3] md:text-[57px] font-black leading-none max-[876px]:text-3xl'>WHAT OUR <br/>CLIENT SAYS</h1>
             <Slider {...settings}>
                 {clients.map((client, index) => ( 
-                    <div key={index} className='max-w-[1300px] mx-auto grid md:grid-cols-2 md:columns-2 py-16 sm:w-10/12 sm:pr-10 sm:py-0 md:border-r-2 md:border-solid md:border-black pl-6 sm:border-r-0'>
-                        <img src={Quote} alt="/" className=''/>
+                    <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 md:columns-2 md:border-r-2 md:border-solid md:border-black md:pl-10 sm:border-r-0'>
+                        <img src={Quote} alt="/" className='w-[60px] -mb-[10px]'/>
                         <img src={client.image} alt='/' className='w-[274px] h-[281px]'/>
                         <div>
                             <h1 className='text-2xl font-bold pb-4'>{client.title}</h1>
@@ -42,10 +43,12 @@ function Testinomial () {
                     </div>
                 ))}
             </Slider>
-            <div className='py-16 ml-8'>
+            <div className='py-16 mx-auto'>
             <Button>KNOW MORE</Button>
             </div>
         </div>
+        </div>
+        
     )
 }
 
