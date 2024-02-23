@@ -13,7 +13,7 @@ const Header = () => {
     ];
 
     return (
-        <nav className='font-sans shadow-md w-full fixed top-0 left-0'>
+        <nav className='w-full fixed top-0 left-0'>
             <div className='max-w-[1240px] mx-auto md:flex  justify-between bg-white  py-4 w-[90%]'>
                     <img src={Logo} alt="Logo" className='w-36 h-auto'></img>
                 <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>

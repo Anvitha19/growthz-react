@@ -72,9 +72,9 @@ const MainPage = () => {
     <>
     <Header />
     {/* Banner start */}
-    <div className='py-16 w-full'>
+    <div className='md:py-16 w-full max-[876px]:py-8'>
         <div className='max-w-[1240px] relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
-            <h1 className='text-black md:text-[80px] leading-tight font-black max-[876px]:text-[32px]'>We Help Impactful <br/>Brands Build
+            <h1 className='text-black md:text-[80px] leading-none font-black max-[876px]:text-[32px]'>We Help Impactful <br/>Brands Build
                     <span className='text-[#F3BE18]'> Predictable </span>
                     {/* <span>Sustainable</span>
                     <span>Scalable</span>
@@ -82,7 +82,7 @@ const MainPage = () => {
                 Compounding Growth
             </h1>
             <p className='py-4 text-[#1A1E21] md:text-lg font-medium sm:text-sm'>We're not your typical marketing agency. Instead, we're a team of dedicated experts blending innovative thinking with proven methodologies. With a focus on processes that work and a talented squad that's second to none, we're here to transform your brand's vision into measurable success.</p>
-            <div className='md:pt-12 max-[876px]:pb-5'>
+            <div className='pt-12'>
                 <Button>Let's talk</Button>
             </div>
         </div>
@@ -91,12 +91,12 @@ const MainPage = () => {
         </div>
     </div>
     {/* Banner end */}
-    <div className='w-full py-16'>
+    <div className='w-full md:py-16'>
       {sectionsData.map((section, index) => (
-        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-16 w-[80%]'>
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 md:py-16 w-[80%]'>
           <div className='flex flex-col justify-center'>
-            <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
-            <h4 className='md:text-3xl sm:text-xl text-base font-medium pb-2'>{section.subTitle}</h4>
+            <h1 className='md:text-[50px] md:leading-none sm:text-3xl text-2xl max-[876px]:text-[28px] font-black py-2'>{section.title}</h1>
+            <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
             <p className='text-[#1A1E21] md:text-lg sm:text-sm font-medium'>{section.description}</p>
           </div>
           <img className='w-[500px] mx-auto my-4' src={section.image} alt='/' />
@@ -106,17 +106,17 @@ const MainPage = () => {
         <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-16 w-[80%]'>
           <img className='w-[500px] mx-auto my-4 max-[876px]:order-1 md:order-none' src={section.image} alt='/' />
           <div className='flex flex-col justify-center'>
-            <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
-            <h4 className='md:text-3xl sm:text-xl text-base font-medium pb-2'>{section.subTitle}</h4>
+            <h1 className='md:text-[50px] md:leading-none sm:text-3xl text-2xl max-[876px]:text-[28px] font-black py-2'>{section.title}</h1>
+            <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
             <p className='text-[#1A1E21] md:text-lg sm:text-sm font-medium'>{section.description}</p>
           </div>
         </div>
       ))}
       {sectionsData2.map((section, index) => (
-        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-16 w-[80%]'>
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 md:py-16 w-[80%]'>
           <div className='flex flex-col justify-center'>
-            <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
-            <h4 className='md:text-3xl sm:text-xl text-base font-medium pb-2'>{section.subTitle}</h4>
+            <h1 className='md:text-[50px] md:leading-none sm:text-3xl text-2xl font-black py-2 max-[876px]:text-[28px]'>{section.title}</h1>
+            <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
             <p className='text-[#1A1E21] md:text-lg sm:text-sm font-medium'>{section.description}</p>
           </div>
           <img className='w-[500px] mx-auto my-4' src={section.image} alt='/' />
@@ -126,16 +126,16 @@ const MainPage = () => {
         <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-16 w-[80%]'>
           <img className='w-[500px] mx-auto my-4 max-[876px]:order-1 md:order-none' src={section.image} alt='/' />
           <div className='flex flex-col justify-center'>
-            <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
-            <h4 className='md:text-3xl sm:text-xl text-base font-medium pb-2'>{section.subTitle}</h4>
+            <h1 className='md:text-[50px] md:leading-none sm:text-3xl text-2xl font-black py-2 max-[876px]:text-[28px]'>{section.title}</h1>
+            <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
             <p className='text-[#1A1E21] md:text-lg sm:text-sm font-medium'>{section.description}</p>
           </div>
         </div>
       ))}
     </div>
-    <div className='w-full py-16'>
+    <div className='w-full py-16 max-[876px]:hidden'>
     <div className='max-w-[1240px] items-center justify-center text-center mx-auto w-[70%]'>
-      <h2 className='md:text-[57px] md:leading-tight  max-[867px]:text-2xl text-2xl text-black font-black pb-4'>LET'S SCALE YOUR GROWTHZ STORY TODAY</h2>
+      <h2 className='md:text-[50px] md:leading-tight  max-[867px]:text-2xl text-2xl text-black font-black pb-4'>LET'S SCALE YOUR GROWTHZ STORY TODAY</h2>
       <div className=''>
       <Button>GET IN TOUCH</Button>
       </div>
@@ -143,19 +143,21 @@ const MainPage = () => {
     </div>
     <Clients />
     <Testinomial />
-    <div className='w-full py-16'>
+    <div className='w-full md:py-16'>
       <div className='max-w-[1240px] mx-auto w-[90%]  max-[876px]:w-[80%]'>
-      <h1 className='py-16 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>DISCOVER OUR <br />PROCESS</h1>
+      <h1 className='md:py-16 max-[876px]:pb-10 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>DISCOVER OUR <br />PROCESS</h1>
       {process.map((section, index) => (
         <div key={index} className='mx-auto mb-10'>
           <div className='flex flex-col justify-center border-b-4 border-solid border-[#f3be18]'>
-            <h1 className='md:text-4xl  sm:text-3xl text-2xl font-black py-2'>{section.title}</h1>
-            <h4 className='md:text-lg sm:text-sm text-base font-semibold pb-2'>{section.subTitle}</h4>
+            <h1 className='md:text-4xl  sm:text-3xl text-2xl font-black py-2 max-[876px]:text-[18px]'>{section.title}</h1>
+            <h4 className='md:text-lg sm:text-sm text-base font-semibold pb-2 max-[876px]:text-[16px]'>{section.subTitle}</h4>
             <p className='text-[#1A1E21] md:text-lg sm:text-sm font-normal pb-8'>{section.description}</p>
           </div>
         </div>
       ))}
+      <div className='max-[876px]:text-center'>
       <Button>LET'S TALK</Button>
+      </div>
     </div>
     </div>
     <Maximize />

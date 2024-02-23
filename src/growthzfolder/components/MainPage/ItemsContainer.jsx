@@ -6,8 +6,8 @@ import Icon from '../../../assets/icon.png';
 
 const ItemsContainer = () => {
   return (
-    <div className='mx-auto w-[80%]'>
-       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:px-8 px-5 ml-24 pb-8">
+    <div className=''>
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:px-8 px-5 pb-8">
         <img src={Icon} alt='footer' className='w-36'/>
       <Item Links={Services} title="Services" />
       <Item Links={Company} title="Company" />

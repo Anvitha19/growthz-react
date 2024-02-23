@@ -31,16 +31,16 @@ function Clients  () {
   ]
   };
   return (
-    <div className='w-full py-16 '>
+    <div className='w-full md:py-16 '>
         <div className=' bg-[#F3BE18] mx-auto'>
-        <h1 className='md:text-[57px] md:ml-16 font-black py-5 uppercase ml-8 max-[876px]:text-[24px]'>
+        <h1 className='md:text-[57px] md:ml-16 font-black md:py-5 max-[876px]:py-2 uppercase ml-8 max-[876px]:text-[24px]'>
             Our Clients
         </h1>
         <Slider {...settings}>
                 {data.map((data, index) => ( 
                   <div className='mx-auto'> 
                     <div key={index} className='max-w-[800px] mx-auto'>
-                        <img className='md:w-[285px] md:h-[155px] sm:w-[150px]' src={data.img} alt='/'/>
+                        <img className='md:w-[285px] md:h-[155px] max-[876px]::w-[100px]' src={data.img} alt='/'/>
                     </div>
                   </div>
                 ))}
