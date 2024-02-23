@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/growthz-react/static/css/main.3345f3ac.css",
-    "main.js": "/growthz-react/static/js/main.c5986174.js",
+    "main.css": "/growthz-react/static/css/main.d2a9bafd.css",
+    "main.js": "/growthz-react/static/js/main.a7514e03.js",
     "static/media/home-img-2.svg": "/growthz-react/static/media/home-img-2.14854554f86aea28e2d2f204d27e1bac.svg",
+    "static/media/testinomial-img-1.png": "/growthz-react/static/media/testinomial-img-1.3ec699b6719f43750311.png",
+    "static/media/testinomial-img-2.png": "/growthz-react/static/media/testinomial-img-2.1289ae0419f0ec2bc4d8.png",
     "static/media/home-img-3.svg": "/growthz-react/static/media/home-img-3.4e8311a601183dd43512007452d1b629.svg",
     "static/media/home-img.svg": "/growthz-react/static/media/home-img.272e7f937f2606eaf019342f93c15802.svg",
+    "static/media/hero-footer.png": "/growthz-react/static/media/hero-footer.2416bc9639c54d4db787.png",
     "static/media/dashboard.svg": "/growthz-react/static/media/dashboard.6d0956122c0500a9218b9c17b649a9dc.svg",
     "static/media/home-img-1.png": "/growthz-react/static/media/home-img-1.0f626db2b42734e09c51.png",
     "static/media/logo-color.png": "/growthz-react/static/media/logo-color.b8b4ff0131eebc45db57.png",
@@ -12,13 +15,14 @@
     "static/media/slick.svg": "/growthz-react/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/growthz-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/growthz-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/quote.svg": "/growthz-react/static/media/quote.c0cf1f9567711c71c9c4abafd7a08670.svg",
     "static/media/slick.woff": "/growthz-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/growthz-react/index.html",
-    "main.3345f3ac.css.map": "/growthz-react/static/css/main.3345f3ac.css.map",
-    "main.c5986174.js.map": "/growthz-react/static/js/main.c5986174.js.map"
+    "main.d2a9bafd.css.map": "/growthz-react/static/css/main.d2a9bafd.css.map",
+    "main.a7514e03.js.map": "/growthz-react/static/js/main.a7514e03.js.map"
   },
   "entrypoints": [
-    "static/css/main.3345f3ac.css",
-    "static/js/main.c5986174.js"
+    "static/css/main.d2a9bafd.css",
+    "static/js/main.a7514e03.js"
   ]
 }
