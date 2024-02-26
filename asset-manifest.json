@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/growthz-react/static/css/main.d2a9bafd.css",
+    "main.css": "/growthz-react/static/css/main.4f1bb7b5.css",
     "main.js": "/growthz-react/static/js/main.a7514e03.js",
     "static/media/home-img-2.svg": "/growthz-react/static/media/home-img-2.14854554f86aea28e2d2f204d27e1bac.svg",
     "static/media/testinomial-img-1.png": "/growthz-react/static/media/testinomial-img-1.3ec699b6719f43750311.png",
@@ -18,11 +18,11 @@
     "static/media/quote.svg": "/growthz-react/static/media/quote.c0cf1f9567711c71c9c4abafd7a08670.svg",
     "static/media/slick.woff": "/growthz-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/growthz-react/index.html",
-    "main.d2a9bafd.css.map": "/growthz-react/static/css/main.d2a9bafd.css.map",
+    "main.4f1bb7b5.css.map": "/growthz-react/static/css/main.4f1bb7b5.css.map",
     "main.a7514e03.js.map": "/growthz-react/static/js/main.a7514e03.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2a9bafd.css",
+    "static/css/main.4f1bb7b5.css",
     "static/js/main.a7514e03.js"
   ]
 }
