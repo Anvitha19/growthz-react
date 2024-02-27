@@ -13,9 +13,11 @@ const Header = () => {
     ];
 
     return (
-        <nav className='w-full fixed top-0 left-0'>
-            <div className='max-w-[1240px] mx-auto md:flex  justify-between bg-white  py-4 w-[90%]'>
+        <nav className='font-work w-full fixed top-0 left-0 bg-white'>
+            <div className='mx-10 md:flex  justify-between   py-4'>
+                <a href='/' className="block">
                     <img src={Logo} alt="Logo" className='w-36 h-auto'></img>
+                </a>
                 <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
                     <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
                 </div>
@@ -24,21 +26,21 @@ const Header = () => {
                         <li key={index} className='md:ml-10 text-xl md:my-0 my-7'>
                             {link.sublinks ? (
                                 <div className="relative">
-                                    <span className='text-black text-base font-bold hover:text-[#F3BE18] duration-300 cursor-pointer' onClick={() => setServicesOpen(!servicesOpen)}>{link.name}</span>
+                                    <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer' onClick={() => setServicesOpen(!servicesOpen)}>{link.name}</span>
                                     {servicesOpen && (
                                         <ul className="absolute left-0 top-8 bg-white shadow-md py-2.5 px-4 rounded-md">
                                             {link.sublinks.map((sublink, subIndex) => (
-                                                <li key={subIndex} className="text-black text-base font-bold hover:text-[#F3BE18] duration-300 cursor-pointer">{sublink}</li>
+                                                <li key={subIndex} className="text-black text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer">{sublink}</li>
                                             ))}
                                         </ul>
                                     )}
                                 </div>
                             ) : (
-                                <a href={link.link} className='text-black text-base font-bold hover:text-[#F3BE18] duration-300'>{link.name}</a>
+                                <a href={link.link} className='text-black text-lg font-bold hover:text-[#F3BE18] duration-300'>{link.name}</a>
                             )}
                         </li>
                     ))}
-                <button className='font-sans bg-[#6E18F3] text-sm font-black text-white py-2.5 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300'>Let's Talk</button>
+                <button className='bg-[#6E18F3] text-sm font-black text-white py-2.5 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300'>LET'S TALK</button>
                 </ul>
             </div>
         </nav>

@@ -31,7 +31,7 @@ function Clients  () {
   ]
   };
   return (
-    <div className='w-full md:py-16 '>
+    <div className='font-work w-full md:py-16 '>
         <div className=' bg-[#F3BE18] mx-auto'>
         <h1 className='md:text-[57px] md:ml-16 font-black md:py-5 max-[876px]:py-2 uppercase ml-8 max-[876px]:text-[24px]'>
             Our Clients
