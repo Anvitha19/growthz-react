@@ -13,7 +13,7 @@ const Maximize = () => {
             </button>
             </div>
         </div>
-        <div className='w-[1500px]'>
+        <div className='w-auto'>
         <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[250px] -ml-[70px] '/>
         </div>
     </div>
