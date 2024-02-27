@@ -74,7 +74,7 @@ const MainPage = () => {
     {/* Banner start */}
     <div className='font-work md:py-16 w-full max-[876px]:py-8'>
         <div className='max-w-[1240px] relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
-            <h1 className='text-black md:text-[80px] md:leading-[6.25rem] font-black max-[876px]:text-[32px]'>We Help Impactful <br/>Brands Build
+            <h1 className='text-black md:text-[88px] md:leading-[6.25rem] font-black max-[876px]:text-[32px]'>We Help Impactful <br/>Brands Build
                     <span className='text-[#F3BE18]'> Predictable </span>
                     {/* <span>Sustainable</span>
                     <span>Scalable</span>
