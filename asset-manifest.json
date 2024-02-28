@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/growthz-react/static/css/main.51f85b5a.css",
-    "main.js": "/growthz-react/static/js/main.309de9a0.js",
+    "main.css": "/growthz-react/static/css/main.40f22425.css",
+    "main.js": "/growthz-react/static/js/main.65d3c3d5.js",
     "static/media/home-img-2.svg": "/growthz-react/static/media/home-img-2.14854554f86aea28e2d2f204d27e1bac.svg",
     "static/media/testinomial-img-1.png": "/growthz-react/static/media/testinomial-img-1.3ec699b6719f43750311.png",
     "static/media/testinomial-img-2.png": "/growthz-react/static/media/testinomial-img-2.1289ae0419f0ec2bc4d8.png",
@@ -18,11 +18,11 @@
     "static/media/quote.svg": "/growthz-react/static/media/quote.c0cf1f9567711c71c9c4abafd7a08670.svg",
     "static/media/slick.woff": "/growthz-react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/growthz-react/index.html",
-    "main.51f85b5a.css.map": "/growthz-react/static/css/main.51f85b5a.css.map",
-    "main.309de9a0.js.map": "/growthz-react/static/js/main.309de9a0.js.map"
+    "main.40f22425.css.map": "/growthz-react/static/css/main.40f22425.css.map",
+    "main.65d3c3d5.js.map": "/growthz-react/static/js/main.65d3c3d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.51f85b5a.css",
-    "static/js/main.309de9a0.js"
+    "static/css/main.40f22425.css",
+    "static/js/main.65d3c3d5.js"
   ]
 }
