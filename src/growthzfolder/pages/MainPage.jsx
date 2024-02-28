@@ -1,15 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Logo from '../../assets/logo-color.png';
 import Dashboard from '../../assets/dashboard.svg';
 import Button from '../components/MainPage/Button';
 import Home from '../../assets/home-img.svg';
 import Home1 from '../../assets/home-img-1.png';
 import Home2 from '../../assets/home-img-2.svg';
 import Home3 from '../../assets/home-img-3.svg';
-import Header from '../components/MainPage/Header'
-import Maximize from '../components/MainPage/Maximize'
-import Footer from '../components/MainPage/Footer'
 import Clients from '../components/MainPage/Clients'
 import Testinomial from '../components/MainPage/Testinomial'
+import HeroFooter from "../../assets/hero-footer.png"
+import { AiFillCaretDown } from "react-icons/ai";
+
+const Links = [
+  { name: "About", link: "/AboutUs" },
+  { name: "Services", link: "/", sublinks: [
+      { name: "Search Engine Optimization", link: "/seo" },
+      { name: "SEM / PPC", link: "/sem" },
+      { name: "Social Media Marketing", link: "/social-media" },
+      { name: "Outbound Marketing", link: "/outbound-marketing" },
+      { name: "Social Media Ads", link: "/social-media-ads" },
+      { name: "Branding", link: "/branding" }
+  ]},
+  { name: "Case Studies", link: "/" },
+  { name: "Careers", link: "/" },
+];
 
 const sectionsData = [
   {
@@ -68,9 +82,52 @@ const process = [
 ];
 
 const MainPage = () => {
+  let [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+
+  const toggleServicesDropdown = () => {
+    setServicesOpen(!servicesOpen);
+};
   return (
     <>
-    <Header />
+    {/* Header section start */}
+    <nav className='font-work w-full fixed top-0 left-0 bg-white z-50'>
+            <div className='mx-10 md:flex  justify-between   py-4'>
+                <a href='/' className="block">
+                    <img src={Logo} alt="Logo" className='w-36 h-auto'></img>
+                </a>
+                <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+                    <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
+                </div>
+                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
+                    {Links.map((link, index) => (
+                        <li key={index} className='md:ml-10 text-xl md:my-0 my-7'>
+                            {link.sublinks ? (
+                                <div className="relative">
+                                    <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer flex items-center' onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
+                                        {link.name}
+                                        <AiFillCaretDown />
+                                    </span>
+                                    {servicesOpen && (
+                                        <ul className="absolute w-[300px] left-0 top-8 bg-white shadow-md py-2.5 px-4 rounded-md -ml-16" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
+                                            {link.sublinks.map((sublink, subIndex) => (
+                                                <li key={subIndex} className="text-black text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer py-2">
+                                                    <a href={sublink.link}>{sublink.name}</a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
+                            ) : (
+                                <a href={link.link} className='text-black text-lg font-bold hover:text-[#F3BE18] duration-300'>{link.name}</a>
+                            )}
+                        </li>
+                    ))}
+                <button className='bg-[#6E18F3] text-sm font-black text-white py-2.5 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300'>LET'S TALK</button>
+                </ul>
+            </div>
+        </nav>
+    {/* Header section end */}
     {/* Banner start */}
     <div className='font-work md:py-16 w-full max-[876px]:py-8'>
         <div className='max-w-[1240px] relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
@@ -160,8 +217,21 @@ const MainPage = () => {
       </div>
     </div>
     </div>
-    <Maximize />
-    <Footer />
+    <div className='font-work w-full py-16'>
+      <div className="bg-[#6E18F3] mx-auto">
+        <div className='items-center text-center justify-center mx-auto w-[70%]'>
+            <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Maximize Your Digital Presence with Our Expertise</h2>
+            <div className='pb-8'>
+            <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
+                GET STARTED TODAY
+            </button>
+            </div>
+        </div>
+        <div className='w-auto'>
+        <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[240px]'/>
+        </div>
+    </div>
+    </div>
     </>
   )
 }

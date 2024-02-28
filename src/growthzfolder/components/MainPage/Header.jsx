@@ -1,13 +1,25 @@
 import React, { useState } from 'react';
 import Logo from '../../../assets/logo-color.png';
+import { AiFillCaretDown } from "react-icons/ai";
 
 const Header = () => {
     let [open, setOpen] = useState(false);
     const [servicesOpen, setServicesOpen] = useState(false);
 
+    const toggleServicesDropdown = () => {
+        setServicesOpen(!servicesOpen);
+    };
+
     const Links = [
-        { name: "About", link: "/" },
-        { name: "Services", link: "/", sublinks: ["Search Engine Optimization", "SEM / PPC", "Social Media Marketing", "Outbound Marketing", "Social Media Ads", "Branding"] },
+        { name: "About", link: "/AboutUs" },
+        { name: "Services", link: "/", sublinks: [
+            { name: "Search Engine Optimization", link: "/seo" },
+            { name: "SEM / PPC", link: "/sem" },
+            { name: "Social Media Marketing", link: "/social-media" },
+            { name: "Outbound Marketing", link: "/outbound-marketing" },
+            { name: "Social Media Ads", link: "/social-media-ads" },
+            { name: "Branding", link: "/branding" }
+        ]},
         { name: "Case Studies", link: "/" },
         { name: "Careers", link: "/" },
     ];
@@ -26,11 +38,16 @@ const Header = () => {
                         <li key={index} className='md:ml-10 text-xl md:my-0 my-7'>
                             {link.sublinks ? (
                                 <div className="relative">
-                                    <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer' onClick={() => setServicesOpen(!servicesOpen)}>{link.name}</span>
+                                    <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer flex items-center' onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
+                                        {link.name}
+                                        <AiFillCaretDown />
+                                    </span>
                                     {servicesOpen && (
-                                        <ul className="absolute left-0 top-8 bg-white shadow-md py-2.5 px-4 rounded-md">
+                                        <ul className="absolute w-[300px] left-0 top-8 bg-white shadow-md py-2.5 px-4 rounded-md -ml-16" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
                                             {link.sublinks.map((sublink, subIndex) => (
-                                                <li key={subIndex} className="text-black text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer">{sublink}</li>
+                                                <li key={subIndex} className="text-black text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer py-2">
+                                                    <a href={sublink.link}>{sublink.name}</a>
+                                                </li>
                                             ))}
                                         </ul>
                                     )}
