@@ -13,12 +13,12 @@ const Header = () => {
     const Links = [
         { name: "About", link: "/AboutUs" },
         { name: "Services", link: "/", sublinks: [
-            { name: "Search Engine Optimization", link: "/seo" },
-            { name: "SEM / PPC", link: "/sem" },
-            { name: "Social Media Marketing", link: "/social-media" },
-            { name: "Outbound Marketing", link: "/outbound-marketing" },
-            { name: "Social Media Ads", link: "/social-media-ads" },
-            { name: "Branding", link: "/branding" }
+            { name: "Search Engine Optimization", link: "/" },
+            { name: "SEM / PPC", link: "/" },
+            { name: "Social Media Marketing", link: "/" },
+            { name: "Outbound Marketing", link: "/" },
+            { name: "Social Media Ads", link: "/" },
+            { name: "Branding", link: "/" }
         ]},
         { name: "Case Studies", link: "/" },
         { name: "Careers", link: "/" },

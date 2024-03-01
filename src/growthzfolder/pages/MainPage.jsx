@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import Logo from '../../assets/logo-color.png';
+// import React, { useState } from 'react'
+// import Logo from '../../assets/logo-color.png';
 import Dashboard from '../../assets/dashboard.svg';
 import Button from '../components/MainPage/Button';
 import Home from '../../assets/home-img.svg';
@@ -9,21 +9,21 @@ import Home3 from '../../assets/home-img-3.svg';
 import Clients from '../components/MainPage/Clients'
 import Testinomial from '../components/MainPage/Testinomial'
 import HeroFooter from "../../assets/hero-footer.png"
-import { AiFillCaretDown } from "react-icons/ai";
+// import { AiFillCaretDown } from "react-icons/ai";
 
-const Links = [
-  { name: "About", link: "/AboutUs" },
-  { name: "Services", link: "/", sublinks: [
-      { name: "Search Engine Optimization", link: "/seo" },
-      { name: "SEM / PPC", link: "/sem" },
-      { name: "Social Media Marketing", link: "/social-media" },
-      { name: "Outbound Marketing", link: "/outbound-marketing" },
-      { name: "Social Media Ads", link: "/social-media-ads" },
-      { name: "Branding", link: "/branding" }
-  ]},
-  { name: "Case Studies", link: "/" },
-  { name: "Careers", link: "/" },
-];
+// const Links = [
+//   { name: "About", link: "/AboutUs" },
+//   { name: "Services", link: "/", sublinks: [
+//       { name: "Search Engine Optimization", link: "/" },
+//       { name: "SEM / PPC", link: "/" },
+//       { name: "Social Media Marketing", link: "/" },
+//       { name: "Outbound Marketing", link: "/" },
+//       { name: "Social Media Ads", link: "/" },
+//       { name: "Branding", link: "/" }
+//   ]},
+//   { name: "Case Studies", link: "/" },
+//   { name: "Careers", link: "/" },
+// ];
 
 const sectionsData = [
   {
@@ -82,16 +82,16 @@ const process = [
 ];
 
 const MainPage = () => {
-  let [open, setOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+//   let [open, setOpen] = useState(false);
+//   const [servicesOpen, setServicesOpen] = useState(false);
 
-  const toggleServicesDropdown = () => {
-    setServicesOpen(!servicesOpen);
-};
+//   const toggleServicesDropdown = () => {
+//     setServicesOpen(!servicesOpen);
+// };
   return (
     <>
     {/* Header section start */}
-    <nav className='font-work w-full fixed top-0 left-0 bg-white z-50'>
+    {/* <nav className='font-work w-full fixed top-0 left-0 bg-white z-50'>
             <div className='mx-10 md:flex  justify-between   py-4'>
                 <a href='/' className="block">
                     <img src={Logo} alt="Logo" className='w-36 h-auto'></img>
@@ -126,7 +126,7 @@ const MainPage = () => {
                 <button className='bg-[#6E18F3] text-sm font-black text-white py-2.5 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300'>LET'S TALK</button>
                 </ul>
             </div>
-        </nav>
+        </nav> */}
     {/* Header section end */}
     {/* Banner start */}
     <div className='font-work md:py-16 w-full max-[876px]:py-8'>
