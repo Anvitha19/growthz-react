@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/growthz-react/static/css/main.7890740d.css",
-    "main.js": "/growthz-react/static/js/main.b133e00c.js",
+    "main.css": "/growthz-react/static/css/main.9509b5be.css",
+    "main.js": "/growthz-react/static/js/main.e1153740.js",
     "static/media/home-img-2.svg": "/growthz-react/static/media/home-img-2.14854554f86aea28e2d2f204d27e1bac.svg",
     "static/media/testinomial-img-1.png": "/growthz-react/static/media/testinomial-img-1.3ec699b6719f43750311.png",
     "static/media/testinomial-img-2.png": "/growthz-react/static/media/testinomial-img-2.1289ae0419f0ec2bc4d8.png",
@@ -15,18 +15,24 @@
     "static/media/home-img-1.png": "/growthz-react/static/media/home-img-1.0f626db2b42734e09c51.png",
     "static/media/logo-color.png": "/growthz-react/static/media/logo-color.b8b4ff0131eebc45db57.png",
     "static/media/icon.png": "/growthz-react/static/media/icon.1fd600b0ab2725f027c2.png",
+    "static/media/about-us-icon-7.svg": "/growthz-react/static/media/about-us-icon-7.8f9c86b929d0c82edee47b48b16d0d8c.svg",
     "static/media/slick.svg": "/growthz-react/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/growthz-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/growthz-react/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/about-us-icon-5.svg": "/growthz-react/static/media/about-us-icon-5.a1ba9aa057938b98f7dfde04878cf030.svg",
+    "static/media/about-us-icon-4.svg": "/growthz-react/static/media/about-us-icon-4.932d413695672ef4880585016c6257d3.svg",
     "static/media/quote.svg": "/growthz-react/static/media/quote.c0cf1f9567711c71c9c4abafd7a08670.svg",
     "static/media/slick.woff": "/growthz-react/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/about-us-icon-3.svg": "/growthz-react/static/media/about-us-icon-3.d34a1acd67e95b8fc1a0f2d936848507.svg",
+    "static/media/about-us-icon-6.svg": "/growthz-react/static/media/about-us-icon-6.a1982bbaecef860c2d1a6628c6250b97.svg",
     "static/media/about-us-icon-1.svg": "/growthz-react/static/media/about-us-icon-1.56bb46feeddd10ab5283ad736fa6a4f5.svg",
     "index.html": "/growthz-react/index.html",
-    "main.7890740d.css.map": "/growthz-react/static/css/main.7890740d.css.map",
-    "main.b133e00c.js.map": "/growthz-react/static/js/main.b133e00c.js.map"
+    "static/media/about-us-icon-2.svg": "/growthz-react/static/media/about-us-icon-2.1ed4253b06259637cd0bf5294f93a189.svg",
+    "main.9509b5be.css.map": "/growthz-react/static/css/main.9509b5be.css.map",
+    "main.e1153740.js.map": "/growthz-react/static/js/main.e1153740.js.map"
   },
   "entrypoints": [
-    "static/css/main.7890740d.css",
-    "static/js/main.b133e00c.js"
+    "static/css/main.9509b5be.css",
+    "static/js/main.e1153740.js"
   ]
 }
