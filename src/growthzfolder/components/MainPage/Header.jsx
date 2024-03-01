@@ -13,7 +13,7 @@ const Header = () => {
     const Links = [
         { name: "About", link: "/AboutUs" },
         { name: "Services", link: "/", sublinks: [
-            { name: "Search Engine Optimization", link: "/" },
+            { name: "Search Engine Optimization", link: "/Services" },
             { name: "SEM / PPC", link: "/" },
             { name: "Social Media Marketing", link: "/" },
             { name: "Outbound Marketing", link: "/" },
