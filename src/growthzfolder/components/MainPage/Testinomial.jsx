@@ -28,7 +28,7 @@ function Testinomial () {
     return (
         <div className='font-work w-full md:py-16'>
             <div className='max-w-[1240px] mx-auto w-[90%]  max-[876px]:w-[80%]'>
-                <h1 className='md:py-16 text-[#6E18F3] md:text-[57px] font-black leading-none max-[876px]:text-3xl max-[876px]:pt-16 max-[876px]:pb-10'>WHAT OUR <br/>CLIENT SAYS</h1>
+                <h1 className='md:py-16 text-[#6E18F3] md:text-[57px] font-black leading-none max-[876px]:text-3xl max-[876px]:pt-16 max-[876px]:pb-10  max-[876px]:text-center'>WHAT OUR <br/>CLIENT SAYS</h1>
                 <Slider {...settings}>
                     {clients.map((client, index) => ( 
                         <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 md:columns-2  md:pl-5 pb-14'>

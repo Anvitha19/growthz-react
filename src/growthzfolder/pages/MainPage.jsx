@@ -1,5 +1,5 @@
-// import React, { useState } from 'react'
-// import Logo from '../../assets/logo-color.png';
+import React, { useState } from 'react'
+import Logo from '../../assets/logo-color.png';
 import Dashboard from '../../assets/dashboard.svg';
 import Button from '../components/MainPage/Button';
 import Home from '../../assets/home-img.svg';
@@ -9,21 +9,21 @@ import Home3 from '../../assets/home-img-3.svg';
 import Clients from '../components/MainPage/Clients'
 import Testinomial from '../components/MainPage/Testinomial'
 import HeroFooter from "../../assets/hero-footer.png"
-// import { AiFillCaretDown } from "react-icons/ai";
+import { AiFillCaretDown } from "react-icons/ai";
 
-// const Links = [
-//   { name: "About", link: "/AboutUs" },
-//   { name: "Services", link: "/", sublinks: [
-//       { name: "Search Engine Optimization", link: "/" },
-//       { name: "SEM / PPC", link: "/" },
-//       { name: "Social Media Marketing", link: "/" },
-//       { name: "Outbound Marketing", link: "/" },
-//       { name: "Social Media Ads", link: "/" },
-//       { name: "Branding", link: "/" }
-//   ]},
-//   { name: "Case Studies", link: "/" },
-//   { name: "Careers", link: "/" },
-// ];
+const Links = [
+  { name: "About", link: "/AboutUs" },
+  { name: "Services", link: "/", sublinks: [
+      { name: "Search Engine Optimization", link: "/Services" },
+      { name: "SEM / PPC", link: "/" },
+      { name: "Social Media Marketing", link: "/" },
+      { name: "Outbound Marketing", link: "/" },
+      { name: "Social Media Ads", link: "/" },
+      { name: "Branding", link: "/" }
+  ]},
+  { name: "Case Studies", link: "/CaseStudies" },
+  { name: "Careers", link: "/" },
+];
 
 const sectionsData = [
   {
@@ -82,16 +82,16 @@ const process = [
 ];
 
 const MainPage = () => {
-//   let [open, setOpen] = useState(false);
-//   const [servicesOpen, setServicesOpen] = useState(false);
+  let [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
-//   const toggleServicesDropdown = () => {
-//     setServicesOpen(!servicesOpen);
-// };
+  const toggleServicesDropdown = () => {
+    setServicesOpen(!servicesOpen);
+};
   return (
     <>
     {/* Header section start */}
-    {/* <nav className='font-work w-full fixed top-0 left-0 bg-white z-50'>
+    <nav className='font-work w-full fixed top-0 left-0 bg-white z-50'>
             <div className='mx-10 md:flex  justify-between   py-4'>
                 <a href='/' className="block">
                     <img src={Logo} alt="Logo" className='w-36 h-auto'></img>
@@ -104,7 +104,7 @@ const MainPage = () => {
                         <li key={index} className='md:ml-10 text-xl md:my-0 my-7'>
                             {link.sublinks ? (
                                 <div className="relative">
-                                    <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer flex items-center' onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
+                                    <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer flex items-center' onClick={toggleServicesDropdown}>
                                         {link.name}
                                         <AiFillCaretDown />
                                     </span>
@@ -126,7 +126,7 @@ const MainPage = () => {
                 <button className='bg-[#6E18F3] text-sm font-black text-white py-2.5 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300'>LET'S TALK</button>
                 </ul>
             </div>
-        </nav> */}
+        </nav>
     {/* Header section end */}
     {/* Banner start */}
     <div className='font-work md:py-16 w-full max-[876px]:py-8'>
@@ -200,7 +200,7 @@ const MainPage = () => {
     </div>
     <Clients />
     <Testinomial />
-    <div className='font-work w-full md:py-16'>
+    <div className='font-work w-full md:pb-16'>
       <div className='max-w-[1240px] mx-auto w-[90%]  max-[876px]:w-[80%]'>
       <h1 className='md:py-16 max-[876px]:pb-10 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>DISCOVER OUR <br />PROCESS</h1>
       {process.map((section, index) => (
@@ -218,8 +218,8 @@ const MainPage = () => {
     </div>
     </div>
     <div className='font-work w-full py-16'>
-      <div className="bg-[#6E18F3] mx-auto">
-        <div className='items-center text-center justify-center mx-auto w-[70%]'>
+      <div className="bg-[#6E18F3] mx-auto pt-8">
+        <div className='items-center text-center justify-center mx-auto w-[60%]'>
             <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Maximize Your Digital Presence with Our Expertise</h2>
             <div className='pb-8'>
             <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
@@ -228,7 +228,7 @@ const MainPage = () => {
             </div>
         </div>
         <div className='w-auto'>
-        <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[240px]'/>
+        <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[220px]'/>
         </div>
     </div>
     </div>

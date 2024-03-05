@@ -23,7 +23,7 @@ const GetInTouch = [
 ];
 
 const Icons = [
-  { name: "logo-facebook", link: "https://www.facebook.com/Syoftofficial" },
+  { name: "logo-facebook", link: "https://www.facebook.com/syoftofficial/" },
   { name: "logo-twitter", link: "https://twitter.com/syoftofficial" },
   // { name: "logo-github", link: "https://anvitha19.github.io/growthz-react/" },
   { name: "logo-linkedin", link: "https://www.linkedin.com/company/syoft/" },
@@ -50,10 +50,10 @@ const Footer = () => {
     </div>
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10
-      text-center text-gray-400 text-sm pb-2 md:border-t-2 md:border-gray-600 pt-4"
+      text-center text-gray-400 text-sm pb-2 md:border-t-2 md:border-gray-600 pt-4 mx-8"
       >
-        <span className='text-base font-normal hover:text-[#F3BE18] md:order-none max-[876px]:order-2 '>Terms and Conditions · Privacy Policy</span>
-        <div className="font-work text-black mx-auto">
+        <span className='text-black font-normal hover:text-[#F3BE18] md:order-none max-[876px]:order-2 text-left'>Terms & Conditions · Privacy Policy</span>
+      <div className="font-work text-black text-right">
       {Icons.map((icon) => (
         <span
           key={icon.name}
