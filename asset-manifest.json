@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/growthz-react/static/css/main.1f528956.css",
-    "main.js": "/growthz-react/static/js/main.82506d1a.js",
+    "main.css": "/growthz-react/static/css/main.32dd3878.css",
+    "main.js": "/growthz-react/static/js/main.c134f2cb.js",
     "static/media/home-img-2.svg": "/growthz-react/static/media/home-img-2.14854554f86aea28e2d2f204d27e1bac.svg",
+    "static/media/case-study-2.png": "/growthz-react/static/media/case-study-2.6aa76447f1b5064ce8fe.png",
     "static/media/testinomial-img-1.png": "/growthz-react/static/media/testinomial-img-1.3ec699b6719f43750311.png",
     "static/media/testinomial-img-2.png": "/growthz-react/static/media/testinomial-img-2.1289ae0419f0ec2bc4d8.png",
+    "static/media/case-study-3.png": "/growthz-react/static/media/case-study-3.957d744c5bae9fe5a2c3.png",
     "static/media/about-us-2.png": "/growthz-react/static/media/about-us-2.26dda594cb374e8ffccd.png",
     "static/media/about-us-1.png": "/growthz-react/static/media/about-us-1.9154d51960d1c123588c.png",
     "static/media/home-img-3.svg": "/growthz-react/static/media/home-img-3.4e8311a601183dd43512007452d1b629.svg",
@@ -12,8 +14,11 @@
     "static/media/hero-footer.png": "/growthz-react/static/media/hero-footer.2416bc9639c54d4db787.png",
     "static/media/about-us-3.png": "/growthz-react/static/media/about-us-3.633f96725f27b9846abb.png",
     "static/media/dashboard.svg": "/growthz-react/static/media/dashboard.6d0956122c0500a9218b9c17b649a9dc.svg",
+    "static/media/case-study-1.png": "/growthz-react/static/media/case-study-1.a7b906cd5b2ee00a3c97.png",
+    "static/media/case-study-4.png": "/growthz-react/static/media/case-study-4.e3e2d08171663fdcb561.png",
     "static/media/home-img-1.png": "/growthz-react/static/media/home-img-1.0f626db2b42734e09c51.png",
     "static/media/logo-color.png": "/growthz-react/static/media/logo-color.b8b4ff0131eebc45db57.png",
+    "static/media/logo-white.png": "/growthz-react/static/media/logo-white.57b3a76208ef9c2e6603.png",
     "static/media/icon.png": "/growthz-react/static/media/icon.1fd600b0ab2725f027c2.png",
     "static/media/about-us-icon-7.svg": "/growthz-react/static/media/about-us-icon-7.8f9c86b929d0c82edee47b48b16d0d8c.svg",
     "static/media/slick.svg": "/growthz-react/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -28,11 +33,11 @@
     "static/media/about-us-icon-1.svg": "/growthz-react/static/media/about-us-icon-1.56bb46feeddd10ab5283ad736fa6a4f5.svg",
     "index.html": "/growthz-react/index.html",
     "static/media/about-us-icon-2.svg": "/growthz-react/static/media/about-us-icon-2.1ed4253b06259637cd0bf5294f93a189.svg",
-    "main.1f528956.css.map": "/growthz-react/static/css/main.1f528956.css.map",
-    "main.82506d1a.js.map": "/growthz-react/static/js/main.82506d1a.js.map"
+    "main.32dd3878.css.map": "/growthz-react/static/css/main.32dd3878.css.map",
+    "main.c134f2cb.js.map": "/growthz-react/static/js/main.c134f2cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f528956.css",
-    "static/js/main.82506d1a.js"
+    "static/css/main.32dd3878.css",
+    "static/js/main.c134f2cb.js"
   ]
 }
