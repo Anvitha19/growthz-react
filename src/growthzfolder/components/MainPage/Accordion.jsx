@@ -3,15 +3,16 @@ import React, { useState } from "react";
 const Accordion = ({ title, answer }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   return (
-    <div className="py-2">
+    <div className="font-work py-2 pb-8" >
+      <div className="border-b-4 border-solid border-[#f3be18]">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full"
       >
-        <span>{title}</span>
+        <span className="text-4xl font-black leading-none hover:text-[#f3be18]">{title}</span>
         {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
         <svg
-          className="fill-indigo-500 shrink-0 ml-8"
+          className="fill-[#f3be18] shrink-0 ml-8"
           width="16"
           height="16"
           xmlns="http://www.w3.org/2000/svg"
@@ -43,8 +44,9 @@ const Accordion = ({ title, answer }) => {
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div className="overflow-hidden">{answer}</div>
+        <div className="overflow-hidden text-lg font-normal text-black pt-5 pb-4">{answer}</div>
       </div>
+    </div>
     </div>
   )
 }

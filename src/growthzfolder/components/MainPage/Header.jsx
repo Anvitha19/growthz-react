@@ -38,7 +38,7 @@ const Header = () => {
                         <li key={index} className='md:ml-10 text-xl md:my-0 my-7'>
                             {link.sublinks ? (
                                 <div className="relative">
-                                    <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer flex items-center' onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
+                                    <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer flex items-center' onClick={toggleServicesDropdown}>
                                         {link.name}
                                         <AiFillCaretDown />
                                     </span>

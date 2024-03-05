@@ -3,6 +3,8 @@ import Clients from '../components/MainPage/Clients';
 import HeroFooter from "../../assets/hero-footer.png";
 import Testinomial from '../components/MainPage/Testinomial';
 import Accordion from "../components/MainPage/Accordion";
+import Nira from "../../assets/services-1.png";
+import Button from '../components/MainPage/Button';
 
 const servicesData = [
     {
@@ -60,6 +62,24 @@ const Services = () => {
   </div>
 </div>
 <Clients />
+<div className='font-work w-full md:py-16'>
+  <div className='max-w-[1240px] mx-auto border-b-[6px] border-solid border-black pb-10'>
+      <img src={Nira} alt="nira" className='border-b-[6px] border-solid border-black'></img>
+    <div className='grid md:grid-cols-2'>
+      <div className='flex flex-col justify-center py-10'>
+        <h1 className='md:text-[90px] md:leading-[105px] sm:text-2xl text-xl font-black'>50K+</h1>
+        <h4 className='md:text-3xl sm:text-sm font-semibold'>Monthly Visitors</h4>
+        <h1 className='md:text-[90px] md:leading-[105px] sm:text-2xl text-xl font-black pt-6'>100K+</h1>
+        <h4 className='md:text-3xl sm:text-sm font-semibold'>Monthly Visitors</h4>
+      </div>
+      <div className='flex flex-col justify-center py-10'>
+        <h4 className='md:text-3xl sm:text-sm font-semibold'>Nira Finance was a struggling microlending start-up with little to zero organic traffic & conversions. They on-boarded us specifically for SEO and search Ads.</h4>
+        <p className='text-[#1A1E21] md:text-lg sm:text-sm font-normal'>Their expertise in SEO and social media has helped our brand secure verified visibility, with consistent top 3 rankings. They are truly proficient in optimizing our online presence, ensuring maximum exposure and success. Thank you, Growthz, for your exceptional skills and dedication to our brand's growth!</p>
+      </div>
+  </div>
+  <Button>LETS TALK</Button>
+  </div>
+</div>
 <div className='font-work w-full'>
     <div className='mx-auto w-[90%]  max-[876px]:w-[80%]'>
         <h1 className='md:py-16 max-[876px]:pb-10 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>OUR TACTICS</h1>
@@ -78,24 +98,27 @@ const Services = () => {
         <h1 className='md:py-16 max-[876px]:pb-10 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>FAQ'S</h1>
     <div className="p-4 rounded-lg">
       <Accordion
-        title="Do you prefer Android or iOS"
-        answer="I like to use iOS products"
+        title="Can I request a new feature for Quiety"
+        answer="Globally whiteboard global web-readiness rather than holistic action items. Uniquely communicate synergistic markets."
       />
       <Accordion
-        title="Do you prefer writing CSS or Tailwind?"
-        answer="I like to use Tailwind"
+        title="How do I create an account?"
+        answer="Globally whiteboard global web-readiness rather than holistic action items. Uniquely communicate synergistic markets."
       />
-      <Accordion title="Firebase or Supabase?" answer="I am using Supabase!" />
+      <Accordion title="Do you offer team accounts?" 
+      answer="Globally whiteboard global web-readiness rather than holistic action items. Uniquely communicate synergistic markets." 
+      />
     </div>
     </div>
 </div>
+
 <div className='font-work w-full py-16'>
       <div className="bg-[#6E18F3] mx-auto">
-        <div className='items-center text-center justify-center mx-auto w-[60%]'>
-            <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Boost Your Visibility, Elevate Your Presence</h2>
+        <div className='items-center text-center justify-center mx-auto w-[70%]'>
+            <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Let's Scale Your Growthz Story Today!</h2>
             <div className='pb-8'>
             <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
-                GET STARTED TODAY
+                GET IN TOUCH
             </button>
             </div>
         </div>
