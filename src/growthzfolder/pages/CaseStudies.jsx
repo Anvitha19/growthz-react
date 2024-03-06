@@ -4,6 +4,8 @@ import casestudy2 from "../../assets/case-study-2.png";
 import casestudy3 from "../../assets/case-study-3.png";
 import casestudy4 from "../../assets/case-study-4.png";
 import HeroFooter from "../../assets/hero-footer.png"
+import Header from '../components/MainPage/Header';
+import Footer from '../components/MainPage/Footer';
 
 const caseStudy = [
     {
@@ -27,6 +29,7 @@ const caseStudy = [
 const CaseStudies = () => {
   return (
     <>
+    <Header />
     {/* Banner start */}
     <div className='font-work md:py-10 w-full max-[876px]:py-8 bg-[#6E18F3]'>
         <div className='relative py-[80px] mx-auto flex-auto items-center justify-center w-[90%]'>
@@ -59,6 +62,7 @@ const CaseStudies = () => {
         </div>
     </div>
     </div>
+    <Footer />
     </>
   )
 }

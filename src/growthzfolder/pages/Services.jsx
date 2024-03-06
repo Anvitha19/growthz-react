@@ -5,6 +5,8 @@ import Testinomial from '../components/MainPage/Testinomial';
 import Accordion from "../components/MainPage/Accordion";
 import Nira from "../../assets/services-1.png";
 import Button from '../components/MainPage/Button';
+import Header from '../components/MainPage/Header';
+import Footer from '../components/MainPage/Footer';
 
 const servicesData = [
     {
@@ -40,6 +42,7 @@ const listData = [
 const Services = () => {
   return (
     <>
+    <Header />
     {/* Banner start */}
     <div className='font-work md:py-10 w-full max-[876px]:py-8 bg-[#6E18F3]'>
         <div className='relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
@@ -89,9 +92,15 @@ const Services = () => {
         <h1 className='md:py-16 max-[876px]:pb-8 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl max-[876px]:text-center'>OUR TACTICS</h1>
         <div className='mx-auto grid md:grid-cols-3 flex w-[90%]'>
         {listData.map((list, index) => (
-        <ul key={index} className=''>
+        <ul key={index}>
         <li className='md:mb-14 list-disc md:text-2xl font-bold max-[876px]:text-[16px] max-[876px]:mb-7'>{list.name}</li>
-        </ul>
+        {/* Conditionally render Read More button for mobile screens */}
+        {index === listData.length - 11 && (
+          <li className='md:text-2xl font-bold max-[876px]:text-[16px] max-[876px]:mb-7'>
+            <button className='text-[#6E18F3] hover:underline md:hidden'>Read More</button>
+          </li>
+        )}
+      </ul>
         ))}
         </div>
     </div>
@@ -131,6 +140,7 @@ const Services = () => {
         </div>
     </div>
     </div>
+    <Footer />
     </>
   )
 }

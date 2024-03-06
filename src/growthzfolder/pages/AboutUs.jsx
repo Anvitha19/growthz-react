@@ -10,6 +10,8 @@ import Icon5 from '../../assets/about-us-icon-5.svg';
 import Icon6 from '../../assets/about-us-icon-6.svg';
 import Icon7 from '../../assets/about-us-icon-7.svg';
 import HeroFooter from "../../assets/hero-footer.png";
+import Header from '../components/MainPage/Header';
+import Footer from '../components/MainPage/Footer';
 
 const teamsImg = [
     {
@@ -89,6 +91,7 @@ const workIcons1 = [
 const AboutUs = () => {
   return (
     <>
+    <Header />
     {/* Banner start */}
     <div className='font-work md:py-10 w-full max-[876px]:py-8 bg-[#6E18F3]'>
         <div className='relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
@@ -164,6 +167,7 @@ const AboutUs = () => {
         </div>
     </div>
     </div>
+    <Footer />
     </>
   )
 }

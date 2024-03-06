@@ -3,16 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-dots li button:before{
+.slick-dots li button:before {
     font-size: 12px !important;
     color: #F3BE18 !important;
     line-height: 12px !important;
     width: 10px !important;
     height: 10px !important;
 }
-.slick-dots li{
+.slick-dots li {
     margin: 0px !important;
 }
-.slick-prev, .slick-next{
+.slick-prev, .slick-next {
     display: none !important;
 }
