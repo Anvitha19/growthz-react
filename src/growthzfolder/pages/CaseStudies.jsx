@@ -58,7 +58,7 @@ const CaseStudies = () => {
             </div>
         </div>
         <div className='w-auto'>
-        <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[240px]'/>
+        <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[240px] cursor-pointer duration-300' href="https://drive.google.com/drive/folders/1RwphnPH1Qoi0VIAFu16zNc8PNE6euGdN?usp=sharing"/>
         </div>
     </div>
     </div>

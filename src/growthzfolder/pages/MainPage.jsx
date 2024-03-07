@@ -105,13 +105,13 @@ const MainPage = () => {
                     {Links.map((link, index) => (
                         <li key={index} className='md:ml-10 text-xl md:my-0 my-7'>
                             {link.sublinks ? (
-                                <div className="">
+                                <div className="relative">
                                     <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer flex items-center' onClick={toggleServicesDropdown}>
                                         {link.name}
                                         <AiFillCaretDown />
                                     </span>
                                     {servicesOpen && (
-                                        <ul className="relative w-[300px] left-0 top-8 bg-white shadow-md py-2.5 px-4 rounded-md -ml-16" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
+                                        <ul className="absolute w-[300px] left-0 top-8 bg-white shadow-md py-2.5 px-4 rounded-md -ml-16" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
                                             {link.sublinks.map((sublink, subIndex) => (
                                                 <li key={subIndex} className="text-black text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer py-2">
                                                     <a href={sublink.link}>{sublink.name}</a>
@@ -138,7 +138,7 @@ const MainPage = () => {
             </div>
             <ul className='py-10 mx-4 text-white'>
             {Links.map((link, index) => (
-                        <li key={index} className='md:ml-10 text-xl md:my-0 my-7'>
+                        <li key={index} className='md:ml-10 text-xl md:my-0 my-7 border-b-[0.5px] border-solid border-black pb-2'>
                             {link.sublinks ? (
                                 <div className="relative">
                                     <span className='text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer flex items-center' onClick={toggleServicesDropdown}>
@@ -146,9 +146,9 @@ const MainPage = () => {
                                         <AiFillCaretDown />
                                     </span>
                                     {servicesOpen && (
-                                        <ul className="absolute w-[300px] left-0 top-8 bg-white shadow-md py-2.5 px-4 rounded-md md:-ml-16" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
+                                        <ul className="relative w-[300px] left-0 pt-4 bg-[#6E18F3] md:-ml-16 " onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)} onClick={toggleServicesDropdown}>
                                             {link.sublinks.map((sublink, subIndex) => (
-                                                <li key={subIndex} className="text-black text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer py-2">
+                                                <li key={subIndex} className="text-white text-lg font-bold hover:text-[#F3BE18] duration-300 cursor-pointer py-2">
                                                     <a href={sublink.link}>{sublink.name}</a>
                                                 </li>
                                             ))}
@@ -160,8 +160,8 @@ const MainPage = () => {
                             )}
                         </li>
                     ))}
-          <div className="py-5">
-          <button className='bg-[#f3be18] text-sm font-black text-black py-2.5 px-8 rounded-2xl md:ml-8 hover:bg-black hover:text-white duration:300'>LET'S TALK</button>
+          <div className="py-5 text-center">
+          <button className='bg-[#f3be18] text-sm font-black text-black py-2.5 px-20 rounded-2xl md:ml-8 hover:bg-black hover:text-white duration:300'>LET'S TALK</button>
           </div>
             </ul>
             </div>
