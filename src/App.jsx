@@ -4,6 +4,7 @@ import MainPage from './growthzfolder/pages/MainPage';
 import AboutUs from './growthzfolder/pages/AboutUs';
 import Services from './growthzfolder/pages/Services';
 import CaseStudies from './growthzfolder/pages/CaseStudies';
+import CaseStudyInner from './growthzfolder/pages/CaseStudyInner';
 
 export default function App  () {
   return (
@@ -15,6 +16,7 @@ export default function App  () {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/CaseStudies" element={<CaseStudies />} />
+          <Route path="/CaseStudyInner" element={<CaseStudyInner />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

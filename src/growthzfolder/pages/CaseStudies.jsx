@@ -49,7 +49,7 @@ const CaseStudies = () => {
 </div>
 <div className='font-work w-full py-16'>
       <div className="bg-[#6E18F3] mx-auto">
-        <div className='items-center text-center justify-center mx-auto w-[70%]'>
+        <div className='items-center text-center justify-center mx-auto w-[60%]'>
             <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Let's Scale Your Growthz Story Today!</h2>
             <div className='pb-8'>
             <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>

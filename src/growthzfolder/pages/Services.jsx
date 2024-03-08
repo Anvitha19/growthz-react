@@ -68,20 +68,20 @@ const Services = () => {
 <div className='font-work w-full py-16 max-[876px]:px-6'>
   <div className='max-w-[1240px] mx-auto border-b-[6px] border-solid border-black md:pb-10 max-[876px]:border-none'>
       <img src={Nira} alt="nira" className='border-b-[6px] border-solid border-black'></img>
-    <div className='grid md:grid-cols-2'>
+    <div className='grid md:grid-cols-3'>
       <div className='flex flex-col justify-center md:py-10 max-[876px]:pt-10  max-[876px]:grid grid-cols-2'>
         <div className='max-[876px]:flex flex-col max-[876px]:justify-center'>
         <h1 className='md:text-[90px] md:leading-[105px] max-[876px]:text-[54px] text-xl font-black'>50K+</h1>
-        <h4 className='md:text-3xl sm:text-sm font-semibold pt-4'>Monthly Visitors</h4>
+        <h4 className='md:text-3xl sm:text-sm font-semibold'>Monthly Visitors</h4>
         </div>
         <div className='max-[876px]:flex flex-col max-[876px]:justify-center'>
         <h1 className='md:text-[90px] md:leading-[105px] max-[876px]:text-[54px] text-xl font-black md:pt-6'>100K+</h1>
-        <h4 className='md:text-3xl sm:text-sm font-semibold pt-4'>Monthly Visitors</h4>
+        <h4 className='md:text-3xl sm:text-sm font-semibold'>Monthly Visitors</h4>
         </div>
       </div>
-      <div className='flex flex-col justify-center md:py-10 max-[876px]:py-8'>
+      <div className='flex flex-col justify-center md:py-10 max-[876px]:py-8 col-span-2'>
         <h4 className='md:text-3xl sm:text-sm font-semibold'>Nira Finance was a struggling microlending start-up with little to zero organic traffic & conversions. They on-boarded us specifically for SEO and search Ads.</h4>
-        <p className='text-[#1A1E21] md:text-lg sm:text-sm font-normal max-[876px]:pt-5'>Their expertise in SEO and social media has helped our brand secure verified visibility, with consistent top 3 rankings. They are truly proficient in optimizing our online presence, ensuring maximum exposure and success. Thank you, Growthz, for your exceptional skills and dedication to our brand's growth!</p>
+        <p className='text-[#1A1E21] md:text-lg sm:text-sm font-normal md:pt-4 max-[876px]:pt-5'>Their expertise in SEO and social media has helped our brand secure verified visibility, with consistent top 3 rankings. They are truly proficient in optimizing our online presence, ensuring maximum exposure and success. Thank you, Growthz, for your exceptional skills and dedication to our brand's growth!</p>
       </div>
   </div>
   <Button>LETS TALK</Button>
@@ -127,8 +127,8 @@ const Services = () => {
 
 <div className='font-work w-full py-16'>
       <div className="bg-[#6E18F3] mx-auto">
-        <div className='items-center text-center justify-center mx-auto w-[70%]'>
-            <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Let's Scale Your Growthz Story Today!</h2>
+        <div className='items-center text-center justify-center mx-auto w-[60%]'>
+            <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Boost Your Visibility, Elevate Your Presence</h2>
             <div className='pb-8'>
             <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
                 GET IN TOUCH

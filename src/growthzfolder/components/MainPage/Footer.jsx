@@ -52,8 +52,8 @@ const Footer = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10
       text-center text-gray-400 text-sm pb-2 md:border-t-2 md:border-gray-600 pt-4 mx-8"
       >
-        <span className='text-black font-normal hover:text-[#F3BE18] md:order-none max-[876px]:order-2 text-left'>Terms & Conditions · Privacy Policy</span>
-      <div className="font-work text-black text-right">
+        <span className='text-black font-normal hover:text-[#F3BE18] md:order-none max-[876px]:order-2 md:text-left'>Terms & Conditions · Privacy Policy</span>
+      <div className="font-work text-black md:text-right">
       {Icons.map((icon) => (
         <span
           key={icon.name}
