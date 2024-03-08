@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/growthz-react/static/css/main.e5ae45e5.css",
-    "main.js": "/growthz-react/static/js/main.74f2e3b8.js",
+    "main.css": "/growthz-react/static/css/main.8dbb9bc6.css",
+    "main.js": "/growthz-react/static/js/main.70cd7652.js",
     "static/media/home-img-2.svg": "/growthz-react/static/media/home-img-2.14854554f86aea28e2d2f204d27e1bac.svg",
     "static/media/case-study-2.png": "/growthz-react/static/media/case-study-2.6aa76447f1b5064ce8fe.png",
     "static/media/testinomial-img-1.png": "/growthz-react/static/media/testinomial-img-1.3ec699b6719f43750311.png",
@@ -20,6 +20,7 @@
     "static/media/logo-color.png": "/growthz-react/static/media/logo-color.b8b4ff0131eebc45db57.png",
     "static/media/logo-white.png": "/growthz-react/static/media/logo-white.57b3a76208ef9c2e6603.png",
     "static/media/icon.png": "/growthz-react/static/media/icon.1fd600b0ab2725f027c2.png",
+    "static/media/NiraFinance.png": "/growthz-react/static/media/NiraFinance.d8fbc62fcfc99c219f64.png",
     "static/media/about-us-icon-7.svg": "/growthz-react/static/media/about-us-icon-7.8f9c86b929d0c82edee47b48b16d0d8c.svg",
     "static/media/slick.svg": "/growthz-react/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/growthz-react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -33,11 +34,11 @@
     "static/media/about-us-icon-1.svg": "/growthz-react/static/media/about-us-icon-1.56bb46feeddd10ab5283ad736fa6a4f5.svg",
     "index.html": "/growthz-react/index.html",
     "static/media/about-us-icon-2.svg": "/growthz-react/static/media/about-us-icon-2.1ed4253b06259637cd0bf5294f93a189.svg",
-    "main.e5ae45e5.css.map": "/growthz-react/static/css/main.e5ae45e5.css.map",
-    "main.74f2e3b8.js.map": "/growthz-react/static/js/main.74f2e3b8.js.map"
+    "main.8dbb9bc6.css.map": "/growthz-react/static/css/main.8dbb9bc6.css.map",
+    "main.70cd7652.js.map": "/growthz-react/static/js/main.70cd7652.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5ae45e5.css",
-    "static/js/main.74f2e3b8.js"
+    "static/css/main.8dbb9bc6.css",
+    "static/js/main.70cd7652.js"
   ]
 }
