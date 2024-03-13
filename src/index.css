@@ -16,3 +16,32 @@
 .slick-prev, .slick-next {
     display: none !important;
 }
+
+@keyframes slide {
+    100% {
+      top: -360px;
+    }
+  }
+  
+  @keyframes typing {
+    40%, 60% {
+      left: calc(100% + 30px);
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
+  .animate-slide {
+    animation: slide 12s steps(4) infinite;
+  }
+  
+  .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: typing 3s steps(10) infinite;
+  }
+  

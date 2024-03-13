@@ -1,6 +1,7 @@
 import React from 'react'
 import Item from './Item';
 import Icon from '../../../assets/icon.png';
+import { FaPhone, FaEnvelope } from 'react-icons/fa';
 
 const Services = [
   { name: "SEO", link: "#" },
@@ -16,10 +17,6 @@ const Company = [
   { name: "Carrers", link: "#" },
   { name: "Case Studies", link: "#" },
   { name: "Blogs", link: "#" },
-];
-const GetInTouch = [
-  { name: "+91 90308 19534", link: "#" },
-  { name: "info@growthz.com", link: "#" },
 ];
 
 const Icons = [
@@ -45,17 +42,41 @@ const Footer = () => {
             Meet Us
         </h1>
         <p className='md:text-xl max-[876px]:text-base font-normal mb-4'>Plot No. 16, Jayabheri Enclave, Gachibowli, Hyderabad, Telangana 500032</p>
-        <Item Links={GetInTouch} title="Get In Touch"/>
+        <h1 className='mb-4 text-[#1A1E21] md:text-3xl max-[876px]:text-lg font-semibold'>
+            Get In Touch
+        </h1>
+        <ul className="list-none mb-0 md:text-2xl">
+      <li>
+        <a href="tel:+919030819534" className="text-decoration-none flex items-center hover:text-[#F3BE18]">
+          <FaPhone className="mr-2" />
+          +91 90308 19534
+        </a>
+      </li>
+      <li>
+        <a href="mailto:info@growthz.com" className="text-decoration-none flex items-center md:pt-4 hover:text-[#F3BE18]">
+          <FaEnvelope className="mr-2" />
+          info@growthz.com
+        </a>
+      </li>
+    </ul>
       </div>
     </div>
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10
       text-center text-gray-400 text-sm pb-2 md:border-t-2 md:border-gray-600 pt-4 mx-8"
       >
-        <span className='text-black font-normal hover:text-[#F3BE18] md:order-none max-[876px]:order-2 md:text-left'>Terms & Conditions · Privacy Policy</span>
+       <ul className="list-unstyled flex space-x-4 mb-0 md:order-none max-[876px]:order-2 md:text-left">
+      <li className="list-inline-item">
+        <a href="/" className="text-decoration-none text-black font-normal hover:text-[#F3BE18] max-[876px]:ml-5">Terms And Conditions</a>
+      </li>
+      <li className="list-inline-item">
+        <a href="/" className="text-decoration-none text-black font-normal hover:text-[#F3BE18] max-[876px]:mr-5">Privacy Policy</a>
+      </li>
+    </ul>
       <div className="font-work text-black md:text-right">
       {Icons.map((icon) => (
-        <span
+        <a href={icon.link}>
+          <span
           key={icon.name}
           className="p-2 cursor-pointer inline-flex items-center
         rounded-full bg-black text-gray-100 mx-1.5 text-xl hover:text-gray-100 hover:bg-[#F3BE18]
@@ -64,6 +85,7 @@ const Footer = () => {
           <ion-icon name={icon.name}>
           </ion-icon>
         </span>
+        </a>
       ))}
     </div>
       </div>

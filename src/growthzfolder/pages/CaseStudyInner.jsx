@@ -19,6 +19,10 @@ const Links = [
     { name: "Case Studies", link: "/CaseStudies" },
     { name: "Careers", link: "/" },
   ];
+  const contacts = [
+    { name: "LET'S TALK", link: "/ContactUS"},
+  ]
+
 const objectives = [
     {points : "Introducing them to the market"},
     {points : "Increasing content-generated and content-assisted inbound leads"},
@@ -105,7 +109,11 @@ const CaseStudyInner = () => {
                             )}
                         </li>
                     ))}
-                <button className='bg-[#6E18F3] text-sm font-black text-white py-2.5 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300'>LET'S TALK</button>
+                {contacts.map((contact) => (
+                      <a href={contact.link}>
+                    <button className='bg-[#6E18F3] text-sm font-black text-white py-3 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300'>{contact.name}</button>
+                      </a>
+                    ))}
                 </ul>
             </div>
             {/* Mobile Navbar Start */}
@@ -140,9 +148,13 @@ const CaseStudyInner = () => {
                             )}
                         </li>
                     ))}
-          <div className="py-5 text-center">
-          <button className='bg-[#f3be18] text-sm font-black text-black py-2.5 px-20 rounded-2xl md:ml-8 hover:bg-black hover:text-white duration:300'>LET'S TALK</button>
-          </div>
+          {contacts.map((contact) => (
+                      <div className="py-5 text-center">
+                          <a href={contact.link}>
+                    <button className='bg-[#f3be18] text-base font-black text-black py-3 px-20 rounded-2xl md:ml-8 hover:bg-black hover:text-white duration:300'>{contact.name}</button>
+                      </a>
+                      </div>
+                    ))}
             </ul>
             </div>
             {/* Mobile Navbar End */}
@@ -154,9 +166,9 @@ const CaseStudyInner = () => {
       <h2 className='md:text-[73px] md:leading-10  max-[867px]:text-[32px] text-2xl text-[#6E18F3] font-black py-4'>Nira Finance Case Study</h2>
       <p className='text-[20px] font-medium justify-center pt-4 max-[867px]:text-left max-[867px]:items-center max-[867px]:text-[16px]'>Lark is the next-gen workspace for teams, built by Bytedance. The new take on an office suite combines all the essential team collaboration tools, from messaging and video conferencing, to schedule management and cloud storage, all in a single interconnected platform. These functions are always in sync, allowing Lark to deliver a seamless user experience for the modern enterprise.</p>
     </div>
-    <div className='text-center items-center mx-auto py-10 w-[80%] grid grid md:grid-cols-3 md:border-y-[6px] border-solid border-black max-[867px]:border-y-[3px] border-solid'>
+    <div className='text-center items-center mx-auto md:py-10 w-[80%] grid grid md:grid-cols-3 md:border-y-[6px] border-solid border-black max-[867px]:border-y-[3px] border-solid'>
     {ratings.map((rating, index) => (
-        <div key={index} className='w-[90%] max-[867px]:py-5'>
+        <div key={index} className='w-[90%] max-[867px]:py-5 py-10'>
         <h1 className='md:text-[90px] md:leading-[105px] max-[876px]:text-[30px] text-xl font-black'>{rating.number}</h1>
         <h4 className='md:text-3xl sm:text-sm font-semibold max-[867px]:text-lg'>{rating.name}</h4>
         </div>
@@ -248,10 +260,14 @@ const CaseStudyInner = () => {
         <div className='py-10 md:w-[100%]'>
         <h3 className='md:text-[32px] font-black text-center max-[876px]:text-[24px]'>other case studies</h3>
         <div className='grid md:grid-cols-2 gap-8 pt-10 mx-auto'>
+            <a href='/'>
             <h4 className='md:text-[24px] text-[#6E18F3] font-extrabold md:w-[60%]'>We increased revenue for JVN<br /> Hair by 298%</h4>
+            </a>
+            <a href='/'>
             <div className='md:items-right md:text-right'>
             <h4 className='md:text-[24px] text-[#6E18F3] font-extrabold'>We helped unspun increase <br/>revenue by 55% YoY</h4>
             </div>
+            </a>
         </div>
         </div>
       </div>
@@ -259,15 +275,17 @@ const CaseStudyInner = () => {
     {/* Footer section start */}
     <div className='font-work w-full py-16'>
       <div className="bg-[#6E18F3] mx-auto">
-        <div className='items-center text-center justify-center mx-auto w-[60%]'>
+        <div className='items-center text-center justify-center mx-auto md:w-[60%] relative z-50'>
             <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Let's Scale Your Growthz Story Today!</h2>
             <div className='pb-8'>
-            <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
+                <a href='/ContactUS'>
+                <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
                 GET IN TOUCH
             </button>
+                </a>
             </div>
         </div>
-        <div className='w-auto'>
+        <div className='w-auto relative z-0'>
         <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[240px] cursor-pointer duration-300' href="https://drive.google.com/drive/folders/1RwphnPH1Qoi0VIAFu16zNc8PNE6euGdN?usp=sharing"/>
         </div>
     </div>

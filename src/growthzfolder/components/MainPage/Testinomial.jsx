@@ -32,7 +32,7 @@ function Testinomial () {
                 <Slider {...settings}>
                     {clients.map((client, index) => ( 
                         <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 md:columns-2  md:pl-5 pb-14'>
-                            <img src={Quote} alt="/" className='w-[60px] -mb-[10px]'/>
+                            <img src={Quote} alt="/" className='w-[60px] -mb-[5px]'/>
                             <img src={client.image} alt='/' className='w-[274px] h-[281px]'/>
                             <div className='md:border-r-4 md:border-solid md:border-black sm:border-r-0 pr-5'>
                                 <h1 className='text-2xl font-black pb-4 italic'>{client.title}</h1>
@@ -43,8 +43,10 @@ function Testinomial () {
                         </div>
                     ))}
                 </Slider>
-                <div className='py-14 mx-auto max-[876px]:text-center'>
+                <div className='py-10 mx-auto max-[876px]:text-center'>
+                    <a href='/ContactUs'>
                     <Button>KNOW MORE</Button>
+                    </a>
                 </div>
             </div>
         </div>

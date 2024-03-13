@@ -27,6 +27,10 @@ const Links = [
   { name: "Careers", link: "/" },
 ];
 
+const contacts = [
+  { name: "LET'S TALK", link: "/ContactUS"},
+]
+
 const sectionsData = [
   {
     image: Home,
@@ -121,11 +125,16 @@ const MainPage = () => {
                                     )}
                                 </div>
                             ) : (
+                              
                                 <a href={link.link} className='text-black text-lg font-bold hover:text-[#F3BE18] duration-300'>{link.name}</a>
                             )}
                         </li>
                     ))}
-                <button className='bg-[#6E18F3] text-sm font-black text-white py-2.5 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300'>LET'S TALK</button>
+                    {contacts.map((contact) => (
+                      <a href={contact.link}>
+                    <button className='bg-[#6E18F3] text-sm font-black text-white py-3 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300'>{contact.name}</button>
+                      </a>
+                    ))}
                 </ul>
             </div>
             {/* Mobile Navbar Start */}
@@ -160,9 +169,13 @@ const MainPage = () => {
                             )}
                         </li>
                     ))}
-          <div className="py-5 text-center">
-          <button className='bg-[#f3be18] text-sm font-black text-black py-2.5 px-20 rounded-2xl md:ml-8 hover:bg-black hover:text-white duration:300'>LET'S TALK</button>
-          </div>
+                    {contacts.map((contact) => (
+                      <div className="py-5 text-center">
+                          <a href={contact.link}>
+                    <button className='bg-[#f3be18] text-base font-black text-black py-3 px-20 rounded-2xl md:ml-8 hover:bg-black hover:text-white duration:300'>{contact.name}</button>
+                      </a>
+                      </div>
+                    ))}
             </ul>
             </div>
             {/* Mobile Navbar End */}
@@ -172,15 +185,17 @@ const MainPage = () => {
     <div className='font-work md:py-16 w-full max-[876px]:py-8'>
         <div className='max-w-[1240px] relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
             <h1 className='text-black md:text-[88px] md:leading-[6.25rem] font-black max-[876px]:text-[32px]'>We Help Impactful <br/>Brands Build
-                    <span className='text-[#F3BE18]'> Predictable </span>
+            <span className='text-[#F3BE18]'> Predictable </span>
                     {/* <span>Sustainable</span>
                     <span>Scalable</span>
                     <span>Measurable</span> */}
-                Compounding Growth
+            Compounding Growth
             </h1>
             <p className='py-4 text-[#1A1E21] md:text-lg font-medium sm:text-sm'>We're not your typical marketing agency. Instead, we're a team of dedicated experts blending innovative thinking with proven methodologies. With a focus on processes that work and a talented squad that's second to none, we're here to transform your brand's vision into measurable success.</p>
             <div className='pt-12'>
+              <a href='/ContactUS'>
                 <Button>LET'S TALK</Button>
+              </a>
             </div>
         </div>
         <div className='border-b-4 border-solid border-black w-[90%] mx-auto '>
@@ -188,9 +203,9 @@ const MainPage = () => {
         </div>
     </div>
     {/* Banner end */}
-    <div className='font worke w-full md:py-16'>
+    <div className='font worke w-full md:pt-16'>
       {sectionsData.map((section, index) => (
-        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[80%]'>
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[90%]'>
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl max-[876px]:text-[28px] font-black py-2'>{section.title}</h1>
             <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
@@ -200,8 +215,8 @@ const MainPage = () => {
         </div>
       ))}
       {sectionsData1.map((section, index) => (
-        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[80%]'>
-          <img className='w-[500px] mx-auto my-4 max-[876px]:order-1 md:order-none' src={section.image} alt='/' />
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[90%]'>
+          <img className='w-[500px]  my-4 max-[876px]:order-1 md:order-none' src={section.image} alt='/' />
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl max-[876px]:text-[28px] font-black py-2'>{section.title}</h1>
             <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
@@ -210,7 +225,7 @@ const MainPage = () => {
         </div>
       ))}
       {sectionsData2.map((section, index) => (
-        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[80%]'>
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[90%]'>
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2 max-[876px]:text-[28px]'>{section.title}</h1>
             <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
@@ -220,8 +235,8 @@ const MainPage = () => {
         </div>
       ))}
       {sectionsData3.map((section, index) => (
-        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[80%]'>
-          <img className='w-[500px] mx-auto my-4 max-[876px]:order-1 md:order-none' src={section.image} alt='/' />
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[90%]'>
+          <img className='w-[500px]  my-4 max-[876px]:order-1 md:order-none' src={section.image} alt='/' />
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2 max-[876px]:text-[28px]'>{section.title}</h1>
             <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
@@ -230,12 +245,12 @@ const MainPage = () => {
         </div>
       ))}
     </div>
-    <div className='font-work w-full py-16 max-[876px]:hidden'>
-    <div className='max-w-[1240px] items-center justify-center text-center mx-auto w-[60%]'>
-      <h2 className='md:text-[57px] md:leading-tight  max-[867px]:text-2xl text-2xl text-black font-bold pb-4'>LET'S SCALE YOUR GROWTHZ STORY TODAY</h2>
-      <div className=''>
-      <Button>GET IN TOUCH</Button>
-      </div>
+    <div className='font-work w-full pb-16 max-[876px]:hidden'>
+    <div className='max-w-[1240px] items-center justify-center text-center mx-auto w-[70%]'>
+      <h2 className='md:text-[57px] md:leading-tight  max-[867px]:text-2xl text-2xl text-black font-black pb-8'>LET'S SCALE YOUR GROWTHZ STORY TODAY</h2>
+        <a href='/ContactUS'>
+          <Button>GET IN TOUCH</Button>
+        </a>
     </div>
     </div>
     <Clients />
@@ -253,21 +268,25 @@ const MainPage = () => {
         </div>
       ))}
       <div className='max-[876px]:text-center'>
-      <Button>LET'S TALK</Button>
+        <a href='/ContactUS'>
+          <Button>LET'S TALK</Button>
+        </a>
       </div>
     </div>
     </div>
     <div className='font-work w-full py-16'>
       <div className="bg-[#6E18F3] mx-auto pt-8">
-        <div className='items-center text-center justify-center mx-auto w-[60%]'>
+        <div className='items-center text-center justify-center mx-auto md:w-[60%] max-[876px]:w-[70%] relative z-50'>
             <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Maximize Your Digital Presence with Our Expertise</h2>
             <div className='pb-8'>
-            <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
+              <a href='/ContactUS'>
+              <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
                 GET STARTED TODAY
-            </button>
+              </button>
+              </a>
             </div>
         </div>
-        <div className='w-auto'>
+        <div className='w-auto z-0 relative'>
         <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[220px]'/>
         </div>
     </div>

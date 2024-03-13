@@ -96,7 +96,7 @@ const AboutUs = () => {
     <div className='font-work md:py-10 w-full max-[876px]:py-8 bg-[#6E18F3]'>
         <div className='relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
             <h1 className='text-white md:text-[88px] md:leading-[6.25rem] font-black max-[876px]:text-[32px]'>Empowering Brands Through Strategic Marketing Solutions</h1>
-            <p className='text-white pt-4 text-[#1A1E21] md:text-lg font-medium sm:text-sm'>At Growthz, we are seasoned marketing mavens driven by the passion to transform brands. We specialise in crafting strategic solutions that elevate businesses across diverse industries. Our team comprises innovative thinkers and marketing enthusiasts dedicated to propelling your brand to new heights</p>
+            <p className='text-white pt-4 text-[#1A1E21] md:text-lg font-medium sm:text-sm w-[90%]'>At Growthz, we are seasoned marketing mavens driven by the passion to transform brands. We specialise in crafting strategic solutions that elevate businesses across diverse industries. Our team comprises innovative thinkers and marketing enthusiasts dedicated to propelling your brand to new heights</p>
         </div>
     </div>
     {/* Banner end */}
@@ -154,15 +154,17 @@ const AboutUs = () => {
 
     <div className='font-work w-full py-16'>
       <div className="bg-[#6E18F3] mx-auto pt-8">
-        <div className='items-center text-center justify-center mx-auto w-[60%]'>
+        <div className='items-center text-center justify-center mx-auto md:w-[60%] relative z-50 '>
             <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Let's Scale Your Growthz Story Today!</h2>
             <div className='pb-8'>
-            <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
+                <a href='/ContactUS'>
+                <button className='bg-white text-sm font-black text-black py-2.5 px-8 rounded-2xl hover:bg-[#F3BE18] duration:300'>
                 GET IN TOUCH
             </button>
+                </a>
             </div>
         </div>
-        <div className='w-auto'>
+        <div className='w-auto relative z-0'>
         <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[220px]'/>
         </div>
     </div>

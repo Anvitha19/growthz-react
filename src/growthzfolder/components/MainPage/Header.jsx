@@ -26,6 +26,10 @@ const Header = () => {
         { name: "Careers", link: "/" },
     ];
 
+    const contacts = [
+        { name: "LET'S TALK", link: "/ContactUS"},
+    ];
+
     useEffect(() => {
         const changeBackground = () => {
             setNavbar(window.scrollY >= 80);
@@ -68,7 +72,11 @@ const Header = () => {
                             )}
                         </li>
                     ))}
-                    <button className={`bg-[#f3be18] text-sm font-black py-2.5 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300 ${navbar ? 'hover:text-white' : 'hover:text-white'}`}>LET'S TALK</button>
+                    {contacts.map((contact) => (
+                      <a href={contact.link}>
+                    <button className={`bg-[#f3be18] text-sm font-black py-3 px-8 rounded-2xl md:ml-8 hover:bg-black duration:300 ${navbar ? 'hover:text-white' : 'hover:text-white'}`}>{contact.name}</button>
+                      </a>
+                    ))}
                 </ul>
             </div>
             {/* Mobile Navbar Start */}
@@ -103,9 +111,11 @@ const Header = () => {
                             )}
                         </li>
                     ))}
-          <div className="py-5 text-center">
-          <button className='bg-[#f3be18] text-sm font-black text-black py-2.5 px-20 rounded-2xl md:ml-8 hover:bg-black hover:text-white duration:300'>LET'S TALK</button>
-          </div>
+                    {contacts.map((contact) => (
+                      <a href={contact.link} className="py-5 text-center">
+                    <button className='bg-[#f3be18] text-base font-black text-black py-3 px-20 rounded-2xl md:ml-8 hover:bg-black hover:text-white duration:300'>{contact.name}</button>
+                      </a>
+                    ))}
             </ul>
             </div>
             {/* Mobile Navbar End */}
