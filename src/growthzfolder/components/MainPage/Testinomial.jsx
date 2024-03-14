@@ -26,16 +26,16 @@ function Testinomial () {
     };
 
     return (
-        <div className='font-work w-full md:py-16'>
+        <div className='font-work w-full md:py-16 max-[876px]:py-10'>
             <div className='max-w-[1240px] mx-auto w-[90%]  max-[876px]:w-[80%]'>
-                <h1 className='md:py-16 text-[#6E18F3] md:text-[57px] font-black leading-none max-[876px]:text-3xl max-[876px]:pt-16 max-[876px]:pb-10  max-[876px]:text-center'>WHAT OUR <br/>CLIENT SAYS</h1>
+                <h1 className='md:py-16 text-[#6E18F3] md:text-[57px] font-black leading-none max-[876px]:text-3xl max-[876px]:pt-10 max-[876px]:pb-5'>WHAT OUR <br/>CLIENT SAYS</h1>
                 <Slider {...settings}>
                     {clients.map((client, index) => ( 
-                        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 md:columns-2  md:pl-5 pb-14'>
+                        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 md:columns-2  md:pl-5 md:pb-14'>
                             <img src={Quote} alt="/" className='w-[60px] -mb-[5px]'/>
                             <img src={client.image} alt='/' className='w-[274px] h-[281px]'/>
-                            <div className='md:border-r-4 md:border-solid md:border-black sm:border-r-0 pr-5'>
-                                <h1 className='text-2xl font-black pb-4 italic'>{client.title}</h1>
+                            <div className='md:border-r-4 border-solid border-black max-[876px]:border-none pr-5'>
+                                <h1 className='text-2xl font-black pb-4 italic max-[876px]:pt-4'>{client.title}</h1>
                                 <p className='text-base font-medium pb-4'>{client.review}</p>
                                 <h4 className='text-lg font-extrabold'>{client.name}</h4>
                                 <p className='text-base font medium max-[876px]:pb-6'>{client.profession}</p>
@@ -43,7 +43,7 @@ function Testinomial () {
                         </div>
                     ))}
                 </Slider>
-                <div className='py-10 mx-auto max-[876px]:text-center'>
+                <div className='py-14 mx-auto max-[876px]:text-center'>
                     <a href='/ContactUs'>
                     <Button>KNOW MORE</Button>
                     </a>

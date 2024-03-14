@@ -210,7 +210,7 @@ const CaseStudyInner = () => {
         </div>
       </div>
     </div>
-    <div className='font-work w-full py-10'>
+    <div className='font-work w-full md:py-10 max-[876px]:pt-20'>
         <div className='mx-auto w-[90%]'>
         <h1 className='md:text-[50px] font-black md:py-5 text-black max-[876px]:text-3xl'>Services Provided</h1>
         <div className='mx-auto grid md:grid-cols-2 gap-8 py-10'>
@@ -258,12 +258,12 @@ const CaseStudyInner = () => {
             </div>
         </div>
         <div className='py-10 md:w-[100%]'>
-        <h3 className='md:text-[32px] font-black text-center max-[876px]:text-[24px]'>other case studies</h3>
+        <h3 className='md:text-[32px] font-black text-center max-[876px]:text-[24px]'>Other case studies</h3>
         <div className='grid md:grid-cols-2 gap-8 pt-10 mx-auto'>
-            <a href='/'>
+            <a href='/CaseStudyInner'>
             <h4 className='md:text-[24px] text-[#6E18F3] font-extrabold md:w-[60%]'>We increased revenue for JVN<br /> Hair by 298%</h4>
             </a>
-            <a href='/'>
+            <a href='/CaseStudyInner'>
             <div className='md:items-right md:text-right'>
             <h4 className='md:text-[24px] text-[#6E18F3] font-extrabold'>We helped unspun increase <br/>revenue by 55% YoY</h4>
             </div>
@@ -274,8 +274,8 @@ const CaseStudyInner = () => {
     </div>
     {/* Footer section start */}
     <div className='font-work w-full py-16'>
-      <div className="bg-[#6E18F3] mx-auto">
-        <div className='items-center text-center justify-center mx-auto md:w-[60%] relative z-50'>
+      <div className="bg-[#6E18F3] mx-auto md:pt-8">
+        <div className='items-center text-center justify-center mx-auto md:w-[60%] max-[876px]:w-[70%] md:relative md:z-50'>
             <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Let's Scale Your Growthz Story Today!</h2>
             <div className='pb-8'>
                 <a href='/ContactUS'>
@@ -285,7 +285,7 @@ const CaseStudyInner = () => {
                 </a>
             </div>
         </div>
-        <div className='w-auto relative z-0'>
+        <div className='w-auto md:relative md:z-0'>
         <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[240px] cursor-pointer duration-300' href="https://drive.google.com/drive/folders/1RwphnPH1Qoi0VIAFu16zNc8PNE6euGdN?usp=sharing"/>
         </div>
     </div>

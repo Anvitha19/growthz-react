@@ -182,7 +182,7 @@ const MainPage = () => {
         </nav>
     {/* Header section end */}
     {/* Banner start */}
-    <div className='font-work md:py-16 w-full max-[876px]:py-8'>
+    <div className='font-work md:py-16 w-full max-[876px]:py-10'>
         <div className='max-w-[1240px] relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
             <h1 className='text-black md:text-[88px] md:leading-[6.25rem] font-black max-[876px]:text-[32px]'>We Help Impactful <br/>Brands Build
             <span className='text-[#F3BE18]'> Predictable </span>
@@ -192,7 +192,7 @@ const MainPage = () => {
             Compounding Growth
             </h1>
             <p className='py-4 text-[#1A1E21] md:text-lg font-medium sm:text-sm'>We're not your typical marketing agency. Instead, we're a team of dedicated experts blending innovative thinking with proven methodologies. With a focus on processes that work and a talented squad that's second to none, we're here to transform your brand's vision into measurable success.</p>
-            <div className='pt-12'>
+            <div className='md:pt-12 max-[876px]:pt-6'>
               <a href='/ContactUS'>
                 <Button>LET'S TALK</Button>
               </a>
@@ -203,9 +203,9 @@ const MainPage = () => {
         </div>
     </div>
     {/* Banner end */}
-    <div className='font worke w-full md:pt-16'>
+    <div className='font worke w-full md:pt-16 max-[876px]:pb-10'>
       {sectionsData.map((section, index) => (
-        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[90%]'>
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 md:py-10 w-[90%] max-[876px]:pt-10'>
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl max-[876px]:text-[28px] font-black py-2'>{section.title}</h1>
             <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
@@ -225,7 +225,7 @@ const MainPage = () => {
         </div>
       ))}
       {sectionsData2.map((section, index) => (
-        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 py-10 w-[90%]'>
+        <div key={index} className='max-w-[1240px] mx-auto grid md:grid-cols-2 md:py-10 w-[90%]'>
           <div className='flex flex-col justify-center'>
             <h1 className='md:text-[57px] md:leading-none sm:text-3xl text-2xl font-black py-2 max-[876px]:text-[28px]'>{section.title}</h1>
             <h4 className='md:text-2xl sm:text-xl text-base font-medium pb-2 max-[876px]:hidden'>{section.subTitle}</h4>
@@ -255,9 +255,9 @@ const MainPage = () => {
     </div>
     <Clients />
     <Testinomial />
-    <div className='font-work w-full md:pb-16'>
+    <div className='font-work w-full md:pb-16 max-[876px]:pb-10'>
       <div className='max-w-[1240px] mx-auto w-[90%]  max-[876px]:w-[80%]'>
-      <h1 className='md:py-16 max-[876px]:pb-10 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>DISCOVER OUR <br />PROCESS</h1>
+      <h1 className='md:py-10 max-[876px]:pb-5 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>DISCOVER OUR <br />PROCESS</h1>
       {process.map((section, index) => (
         <div key={index} className='mx-auto mb-10'>
           <div className='flex flex-col justify-center border-b-4 border-solid border-[#f3be18]'>
@@ -275,8 +275,8 @@ const MainPage = () => {
     </div>
     </div>
     <div className='font-work w-full py-16'>
-      <div className="bg-[#6E18F3] mx-auto pt-8">
-        <div className='items-center text-center justify-center mx-auto md:w-[60%] max-[876px]:w-[70%] relative z-50'>
+      <div className="bg-[#6E18F3] mx-auto md:pt-8">
+        <div className='items-center text-center justify-center mx-auto md:w-[60%] max-[876px]:w-[70%] md:relative md:z-50'>
             <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Maximize Your Digital Presence with Our Expertise</h2>
             <div className='pb-8'>
               <a href='/ContactUS'>
@@ -286,7 +286,7 @@ const MainPage = () => {
               </a>
             </div>
         </div>
-        <div className='w-auto z-0 relative'>
+        <div className='w-auto md:z-0 md:relative'>
         <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[220px]'/>
         </div>
     </div>

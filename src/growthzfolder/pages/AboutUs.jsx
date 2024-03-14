@@ -94,7 +94,7 @@ const AboutUs = () => {
     <Header />
     {/* Banner start */}
     <div className='font-work md:py-10 w-full max-[876px]:py-8 bg-[#6E18F3]'>
-        <div className='relative py-[100px] mx-auto flex-auto items-center justify-center w-[90%]'>
+        <div className='relative md:py-[100px] max-[876px]:pt-[70px] max-[876px]:pb-[50px] mx-auto flex-auto items-center justify-center w-[90%]'>
             <h1 className='text-white md:text-[88px] md:leading-[6.25rem] font-black max-[876px]:text-[32px]'>Empowering Brands Through Strategic Marketing Solutions</h1>
             <p className='text-white pt-4 text-[#1A1E21] md:text-lg font-medium sm:text-sm w-[90%]'>At Growthz, we are seasoned marketing mavens driven by the passion to transform brands. We specialise in crafting strategic solutions that elevate businesses across diverse industries. Our team comprises innovative thinkers and marketing enthusiasts dedicated to propelling your brand to new heights</p>
         </div>
@@ -102,13 +102,13 @@ const AboutUs = () => {
     {/* Banner end */}
     <div className='font-work w-full py-16'>
       <div className='mx-auto w-[90%]  max-[876px]:w-[80%]'>
-      <h1 className='md:py-16 max-[876px]:pb-10 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>ABOUT US</h1>
+      <h1 className='md:py-16 max-[876px]:pb-5 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>ABOUT US</h1>
       <p className='text-[#1A1E21] md:text-lg  sm:text-sm font-normal  justify-center items-center'>We offer tailored marketing solutions geared toward amplifying brand presence and driving growth. From comprehensive digital strategies to impactful campaigns, our services encompass strategic planning, creative content, SEO, social media management, and more. We're committed to reshaping your brand narrative and fostering lasting connections with your audience. Our approach is a blend of meticulous strategy and creative ingenuity. We delve deep into market insights, meticulously curating data-driven strategies tailored to your brand's unique needs. We navigate the digital landscape with precision, employing cutting-edge tools and innovative techniques to ensure your brand stands out amidst competition.</p>
     </div>
     </div>
-    <div className='font-work w-full'>
+    <div className='font-work w-full max-[876px]:pb-16'>
         <div className='mx-auto w-[90%]  max-[876px]:w-[80%]'>
-        <h1 className='md:py-16 max-[876px]:pb-10 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>MEET THE TEAM</h1>
+        <h1 className='md:py-16 max-[876px]:pb-5 text-[#6E18F3] md:text-[57px] font-black leading-none  max-[876px]:text-3xl'>MEET THE TEAM</h1>
         <div className='grid md:grid-cols-4 gap-4 max-[876px]:grid grid-cols-2 gap-2'>
         {teamsImg.map((section, index) => (
         <div key={index}>
@@ -124,7 +124,7 @@ const AboutUs = () => {
     </div>
     <div className='font-work w-full items-center justify-center'>
     <div className='mx-auto w-[90%] max-[876px]:w-[80%]'>
-        <h1 className='py-16 max-[876px]:pb-10 text-[#6E18F3] md:text-[57px] font-black leading-none max-[876px]:text-3xl'>WORK LIFE AT ITS BEST</h1>
+        <h1 className='md:py-16 max-[876px]:pb-5 text-[#6E18F3] md:text-[57px] font-black leading-none max-[876px]:text-3xl'>WORK LIFE AT ITS BEST</h1>
         <div className='grid md:grid-cols-4 md:gap-4 max-[876px]:grid grid-cols-2 max-[876px]:gap-1'>
             {workIcons.map((work, index) => (
                 <div key={index}>
@@ -153,8 +153,8 @@ const AboutUs = () => {
 </div>
 
     <div className='font-work w-full py-16'>
-      <div className="bg-[#6E18F3] mx-auto pt-8">
-        <div className='items-center text-center justify-center mx-auto md:w-[60%] relative z-50 '>
+      <div className="bg-[#6E18F3] mx-auto md:pt-8">
+        <div className='items-center text-center justify-center mx-auto md:w-[60%] max-[876px]:w-[70%] md:relative md:z-50 '>
             <h2 className='text-white md:text-[57px] sm:text-5xl font-black italic py-9 max-[876px]:text-[25px] leading-[34px]'>Let's Scale Your Growthz Story Today!</h2>
             <div className='pb-8'>
                 <a href='/ContactUS'>
@@ -164,7 +164,7 @@ const AboutUs = () => {
                 </a>
             </div>
         </div>
-        <div className='w-auto relative z-0'>
+        <div className='w-auto md:relative md:z-0'>
         <img src={HeroFooter} alt="/" className='max-[1024px]:hidden -mt-[220px]'/>
         </div>
     </div>
