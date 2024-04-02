@@ -40,7 +40,7 @@ const Header = () => {
 
 
     return (
-        <nav className={`font-work w-full fixed top-0 left-0 z-50 ${navbar ? 'bg-white' : 'active:bg-[#6E18F3]'}`}>
+        <nav className={`font-work w-full fixed top-0 left-0 z-[100] ${navbar ? 'bg-white' : 'active:bg-[#6E18F3]'}`}>
             <div className='md:mx-10 md:flex justify-between py-4 max-[876px]:mx-5'>
                 <a href='/' className="block">
                     <img src={navbar ? Logo : LogoWhite} alt="Logo" className='w-36 h-auto'></img>

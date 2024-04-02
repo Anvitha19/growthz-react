@@ -97,7 +97,7 @@ const MainPage = () => {
   return (
     <>
     {/* Header section start */}
-    <nav className='font-work w-full fixed top-0 left-0 bg-white z-50'>
+    <nav className='font-work w-full fixed top-0 left-0 bg-white z-[100]'>
             <div className='md:mx-10 md:flex  justify-between py-4 max-[876px]:mx-5'>
                 <a href='/' className="block">
                     <img src={Logo} alt="Logo" className='w-36 h-auto'></img>

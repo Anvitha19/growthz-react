@@ -2,7 +2,7 @@
   "name": "growthz",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Anvitha19.github.io/growthz-react-3",
+  "homepage": "https://Anvitha19.github.io/growthz-react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
